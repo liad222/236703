@@ -10,16 +10,15 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="DefaultGradleProjectSettings">
-    <option name="testRunner" value="GRADLE" />
-    <option name="delegatedBuild" value="true" />
+    <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Solution/StoryTesterImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="481">
-              <caret line="152" selection-start-line="152" selection-end-line="152" />
+            <state relative-caret-position="229">
+              <caret line="241" column="36" lean-forward="true" selection-start-line="241" selection-start-column="36" selection-end-line="241" selection-end-column="36" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -28,9 +27,29 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Solution/StoryTestExceptionImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="345">
+              <caret line="55" column="19" selection-start-line="55" selection-start-column="19" selection-end-line="55" selection-end-column="19" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#191#192#0" expanded="true" />
+                <element signature="e#218#219#0" expanded="true" />
+                <element signature="e#278#279#0" expanded="true" />
+                <element signature="e#305#306#0" expanded="true" />
+                <element signature="e#362#363#0" expanded="true" />
+                <element signature="e#389#390#0" expanded="true" />
+                <element signature="e#434#435#0" expanded="true" />
+                <element signature="e#458#459#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Solution/Given.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
+            <state relative-caret-position="153">
               <caret line="9" column="20" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="23" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -42,7 +61,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Solution/When.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
+            <state relative-caret-position="170">
               <caret line="10" selection-start-line="10" selection-end-line="10" selection-end-column="19" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -54,7 +73,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Solution/Then.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
+            <state relative-caret-position="170">
               <caret line="10" column="19" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -69,6 +88,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="AnnotationType" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -78,6 +98,7 @@
         <option value="$PROJECT_DIR$/src/Solution/Given.java" />
         <option value="$PROJECT_DIR$/src/Solution/When.java" />
         <option value="$PROJECT_DIR$/src/Solution/Then.java" />
+        <option value="$PROJECT_DIR$/src/Solution/StoryTestExceptionImpl.java" />
         <option value="$PROJECT_DIR$/src/Solution/StoryTesterImpl.java" />
       </list>
     </option>
@@ -93,6 +114,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -121,14 +144,12 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../junit-jupiter-params-5.4.2.jar!/" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -172,16 +193,19 @@
       <workItem from="1556793577917" duration="4000" />
       <workItem from="1556793791817" duration="25000" />
       <workItem from="1556793850668" duration="32000" />
+      <workItem from="1557219413894" duration="6378000" />
+      <workItem from="1557226783102" duration="199000" />
+      <workItem from="1557227105599" duration="4417000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12524000" />
+    <option name="totallyTimeSpent" value="23518000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26639676" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28097165" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -237,19 +261,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Solution/StoryTesterImpl.java">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_212/src.zip!/java/lang/Class.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="481">
-          <caret line="152" selection-start-line="152" selection-end-line="152" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="179">
+          <caret line="1780" column="46" selection-start-line="1780" selection-start-column="46" selection-end-line="1780" selection-end-column="46" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Solution/Given.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
+        <state relative-caret-position="153">
           <caret line="9" column="20" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="23" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -259,7 +280,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Solution/When.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
+        <state relative-caret-position="170">
           <caret line="10" selection-start-line="10" selection-end-line="10" selection-end-column="19" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -269,8 +290,57 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Solution/Then.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
+        <state relative-caret-position="170">
           <caret line="10" column="19" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Provided/StoryTestException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_212/src.zip!/java/util/List.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="791">
+          <caret line="584" column="9" selection-start-line="584" selection-start-column="9" selection-end-line="584" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_212/src.zip!/java/util/Collection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="587">
+          <caret line="288" column="12" selection-start-line="288" selection-start-column="12" selection-end-line="288" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Solution/StoryTestExceptionImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="55" column="19" selection-start-line="55" selection-start-column="19" selection-end-line="55" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#191#192#0" expanded="true" />
+            <element signature="e#218#219#0" expanded="true" />
+            <element signature="e#278#279#0" expanded="true" />
+            <element signature="e#305#306#0" expanded="true" />
+            <element signature="e#362#363#0" expanded="true" />
+            <element signature="e#389#390#0" expanded="true" />
+            <element signature="e#434#435#0" expanded="true" />
+            <element signature="e#458#459#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Solution/StoryTesterImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="229">
+          <caret line="241" column="36" lean-forward="true" selection-start-line="241" selection-start-column="36" selection-end-line="241" selection-end-column="36" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

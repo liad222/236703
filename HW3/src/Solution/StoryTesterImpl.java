@@ -1,41 +1,48 @@
 package Solution;
 
+import Provided.GivenNotFoundException;
 import Provided.StoryTester;
+import Provided.StoryTestException;
+import org.junit.ComparisonFailure;
 
 
+import java.lang.reflect.Array;
 import java.lang.reflect.Method;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.List;
+import java.util.*;
 import java.util.stream.Collectors;
 
 
 public class StoryTesterImpl implements StoryTester {
 
-
+    //receives a story and breaks it down to a list of sentences.
     protected ArrayList<ArrayList> parser(String story){
         ArrayList<ArrayList> sentences = new ArrayList<>();
-        String[] words = story.split(" ");
+        String[] lines = story.split("\n");
         int counter = -1;
-        for(String word: words){
-            if( word.equals("Given")  || word.equals("Then") || word.equals("When")){
-                counter++;
-                ArrayList<String> new_sentence = new ArrayList<>();
-                sentences.add(counter, new_sentence);
-            }
+        for(String line: lines){
+            String[] words = line.split(" ") ;
+            counter++;
+            ArrayList<String> new_sentence = new ArrayList<>();
+            sentences.add(counter, new_sentence);
             ArrayList<String> sentence = sentences.get(counter);
-            sentence.add(word);
+            for(String word: words){
+                sentence.add(word);
+            }
         }
         return sentences;
     }
 
+
+    //receives a sentence and a Given annotation, checks if the sentence and the annotation match.
+    //if yes, returns a list of parameters otherwise returns an empty list.
     @SuppressWarnings("Duplicates")
-    protected ArrayList<ArrayList> compareGiven(ArrayList<String> sentence, Given g){
+    protected ArrayList<ArrayList> compareGiven(ArrayList<String> origSentence, Given g){
        String[] words = g.value().split(" ");
        ArrayList<ArrayList> params = new ArrayList<>();
        ArrayList<String> param_inst = new ArrayList<>();
        params.add(param_inst);
+       ArrayList<String> sentence = new ArrayList<>(origSentence);
+       sentence.remove(0);
        if(words.length != sentence.size()){
            return params;
        }
@@ -54,12 +61,16 @@ public class StoryTesterImpl implements StoryTester {
        return params;
     }
 
+    //receives a sentence and a When annotation, checks if the sentence and the annotation match.
+    //if yes, returns a list of parameters otherwise returns an empty list.
     @SuppressWarnings("Duplicates")
-    protected ArrayList<ArrayList> compareWhen(ArrayList<String> sentence, When w){
+    protected ArrayList<ArrayList> compareWhen(ArrayList<String> origSentence, When w){
         String[] words = w.value().split(" ");
         ArrayList<ArrayList> params = new ArrayList<>();
         ArrayList<String> param_inst = new ArrayList<>();
         params.add(param_inst);
+        ArrayList<String> sentence = new ArrayList<>(origSentence);
+        sentence.remove(0);
         if(words.length != sentence.size()){
             return params;
         }
@@ -78,9 +89,14 @@ public class StoryTesterImpl implements StoryTester {
         return params;
     }
 
-    protected ArrayList<ArrayList> compareThen(ArrayList<String> sentence, Then t){
+    //receives a sentence and a Then annotation, checks if the sentence and the annotation match.
+    //if yes, returns a list of parameters otherwise returns an empty list.
+    //In this function we deal with the word "OR" differently.
+    protected ArrayList<ArrayList> compareThen(ArrayList<String> origSentence, Then t){
         String[] words = t.value().split(" ");
         ArrayList<ArrayList> params = new ArrayList<>();
+        ArrayList<String> sentence = new ArrayList<>(origSentence);
+        sentence.remove(0);
         if(sentence.size() < words.length){
             return params;
         }
@@ -109,6 +125,9 @@ public class StoryTesterImpl implements StoryTester {
         return params;
     }
 
+    //receives a sentence and a class and checks if the class has a matching annotation.
+    //If yes, returns a singelton map from the name of the right method to the matching parameters,
+    // otherwise an empty map.
     @SuppressWarnings("Duplicates")
     protected HashMap<String,ArrayList<ArrayList>> getMethod(ArrayList<String> sentence, Class<?> testClass){
         String keyword = sentence.get(0);
@@ -151,14 +170,126 @@ public class StoryTesterImpl implements StoryTester {
     }
 
 
+        //receives a sentence and a class and checks recursively in the class inheritance tree if there is a matching method to the sentence.
+        //this function uses the getMethod function.
+    protected HashMap<String,ArrayList<ArrayList>> checkClassTree(ArrayList<String> sentence, Class<?> testClass){
+        if(testClass == null){
+            return new HashMap<String, ArrayList<ArrayList>>();
+        }
+        HashMap<String, ArrayList<ArrayList>> right_method = getMethod(sentence, testClass);
+        if(!(right_method.isEmpty())){
+            return right_method;
+        }
+        return checkClassTree(sentence, testClass.getSuperclass());
+    }
+
+    //receives a list of params and an array of classes with size equals to the number of params.
+    //checks if each param is string or int, and inserting the the type of the param to the corresponding place in the array of classes.
+    //eventually returns an array of Objects with String or Int types according to the checking above.
+    protected Object[] convertParams(ArrayList<String> origins, Class[] types){
+        int counter = 0;
+        Object[] params = new Object[types.length];
+        for(String origin: origins){
+            try{
+                int i = Integer.parseInt(origin);
+                types[counter] = Integer.class;
+                params[counter] = i;
+                counter++;
+            }catch(NumberFormatException e){
+                types[counter] = String.class;
+                params[counter] = origin;
+                counter++;
+            }
+        }
+        return params;
+    }
+
+    //receives an array of words and join them to a String.
+    protected String joinSentence(ArrayList<String> sentence){
+        String str = new String(sentence.get(0));
+        for(String word: sentence){
+            str = str.concat(" " + word);
+        }
+        return str;
+    }
+
 
     @Override
     public void testOnInheritanceTree(String story, Class<?> testClass) throws Exception {
         if(story == null || testClass == null){
             throw new IllegalArgumentException();
         }
-        Object inst = testClass.newInstance();
 
+        Object inst = testClass.newInstance();
+        ArrayList<ArrayList> sentences = parser(story);
+        StoryTestExceptionImpl excep = new StoryTestExceptionImpl();
+        for(ArrayList<String> sentence: sentences){
+            String firstWord = sentence.get(0);
+            if(firstWord.equals("Given")){
+                HashMap<String, ArrayList<ArrayList>> right_method = checkClassTree(sentence, testClass);
+                if(right_method.isEmpty()){
+                    throw new GivenNotFoundException();
+                }
+                List<String> methodNames = right_method.entrySet().stream().map(Map.Entry::getKey).collect(Collectors.toList());
+                List<ArrayList<ArrayList>> methodParams = right_method.entrySet().stream().map(Map.Entry::getValue).collect(Collectors.toList());
+                ArrayList<String> params = methodParams.get(0).get(0);
+                Class[] c = new Class[params.size()];
+                Object[] convertedParams = convertParams(params, c);
+                Method m = testClass.getMethod((methodNames.get(0)), c);
+                m.invoke(inst, convertedParams);
+            }
+            if(firstWord.equals("When")){
+                HashMap<String, ArrayList<ArrayList>> right_method = checkClassTree(sentence, testClass);
+                if(right_method.isEmpty()){
+                    throw new GivenNotFoundException();
+                }
+                List<String> methodNames = right_method.entrySet().stream().map(Map.Entry::getKey).collect(Collectors.toList());
+                List<ArrayList<ArrayList>> methodParams = right_method.entrySet().stream().map(Map.Entry::getValue).collect(Collectors.toList());
+                ArrayList<String> params = methodParams.get(0).get(0);
+                Class[] c = new Class[params.size()];
+                Object[] convertedParams = convertParams(params, c);
+                Method m = testClass.getMethod((methodNames.get(0)), c);
+                                                                            //TODo: "when" backup with flag
+                m.invoke(inst, convertedParams);
+            }
+            if(firstWord.equals("Then")){
+                HashMap<String, ArrayList<ArrayList>> right_method = checkClassTree(sentence, testClass);
+                if(right_method.isEmpty()){
+                    throw new GivenNotFoundException();
+                }
+                List<String> methodNames = right_method.entrySet().stream().map(Map.Entry::getKey).collect(Collectors.toList());
+                List<ArrayList<ArrayList>> methodParams = right_method.entrySet().stream().map(Map.Entry::getValue).collect(Collectors.toList());
+                ArrayList<ArrayList> runs = methodParams.get(0);
+                ArrayList<String> expected = new ArrayList<>();
+                ArrayList<String> actual = new ArrayList<>();
+                boolean success = false;
+                for(ArrayList<String> run: runs){
+                    Class[] c = new Class[run.size()];
+                    Object[] convertedParams = convertParams(run, c);
+                    Method m = testClass.getMethod((methodNames.get(0)), c);
+                    try{
+                        m.invoke(inst, convertedParams);
+                        success = true;
+                        break;
+                    }catch(ComparisonFailure e){
+                        expected.add(e.getExpected());
+                        actual.add(e.getActual());
+                    }
+                }
+                if(!success){
+                    excep.incNumFails();
+                    if(excep.getNumFail() == 1){
+                        excep.setSentence(joinSentence(sentence));
+                        excep.setStoryExpected(expected);
+                        excep.setStoryActual(actual);
+                    }
+                    //ToDo: restore the object
+                }
+            }
+        }
+        if(excep.getNumFail() > 0){
+            throw excep;
+        }
     }
 
     @Override
