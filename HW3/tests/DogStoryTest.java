@@ -7,10 +7,10 @@ import Solution.Then;
 import Solution.When;
 
 public class DogStoryTest {
-	protected Dog dog;
+	protected tests.Dog dog;
 	@Given("a Dog of age &age")
 	public void aDog(Integer age) {
-		dog = new Dog(age);
+		dog = new tests.Dog(age);
 	}
 	
 	@When("the dog is not taken out for a walk, the number of hours is &hours")

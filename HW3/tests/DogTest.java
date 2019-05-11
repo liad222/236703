@@ -43,8 +43,8 @@ public class DogTest {
 		nestedStory = "Given a Dog that his age is 6\n"
 				+ "When the dog is not taken out for a walk, the number of hours is 5\n"
 				+ "Then the house condition is clean";
-		testClass = DogStoryTest.class;
-		derivedTestClass = DogStoryDerivedTest.class;
+		testClass = tests.DogStoryTest.class;
+		derivedTestClass = tests.DogStoryDerivedTest.class;
 		tester = new StoryTesterImpl();
 	}
 
