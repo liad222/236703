@@ -1,13 +1,10 @@
 package Solution;
 
-import Provided.GivenNotFoundException;
-import Provided.StoryTester;
-import Provided.StoryTestException;
+import Provided.*;
 import org.junit.ComparisonFailure;
 
 
-import java.lang.reflect.Array;
-import java.lang.reflect.Method;
+import java.lang.reflect.*;
 import java.util.*;
 import java.util.stream.Collectors;
 
@@ -214,12 +211,41 @@ public class StoryTesterImpl implements StoryTester {
     }
 
 
+    protected Object[] doBackup(Field[] origin){
+        Object[] backup = new Object[origin.length];
+        int counter = 0;
+        for(Field f:origin){
+            try{
+                Class<?> cl = f.getClass();
+                Method c = f.getClass().getDeclaredMethod("clone");
+                c.setAccessible(true);
+                Object fNew = c.invoke(f);
+                backup[counter] = fNew;
+                counter++;
+            }catch(Exception e){
+                try{
+                    Constructor<?> c = f.getClass().getDeclaredConstructor(f.getClass());
+                    c.setAccessible(true);
+                    Object fNew = c.newInstance(f);
+                    backup[counter] = fNew;
+                    counter++;
+                }catch (Exception e1){
+                    backup[counter] = f;
+                    counter++;
+                }
+            }
+        }
+        return backup;
+    }
+
+
     @Override
     public void testOnInheritanceTree(String story, Class<?> testClass) throws Exception {
         if(story == null || testClass == null){
             throw new IllegalArgumentException();
         }
-
+        boolean already = false;
+        Object[] backup = null;
         Object inst = testClass.newInstance();
         ArrayList<ArrayList> sentences = parser(story);
         StoryTestExceptionImpl excep = new StoryTestExceptionImpl();
@@ -241,7 +267,12 @@ public class StoryTesterImpl implements StoryTester {
             if(firstWord.equals("When")){
                 HashMap<String, ArrayList<ArrayList>> right_method = checkClassTree(sentence, testClass);
                 if(right_method.isEmpty()){
-                    throw new GivenNotFoundException();
+                    throw new WhenNotFoundException();
+                }
+                if(!already){
+                    Field[] origin = testClass.getDeclaredFields();
+                    backup = doBackup(origin);
+                    already = true;
                 }
                 List<String> methodNames = right_method.entrySet().stream().map(Map.Entry::getKey).collect(Collectors.toList());
                 List<ArrayList<ArrayList>> methodParams = right_method.entrySet().stream().map(Map.Entry::getValue).collect(Collectors.toList());
@@ -249,13 +280,12 @@ public class StoryTesterImpl implements StoryTester {
                 Class[] c = new Class[params.size()];
                 Object[] convertedParams = convertParams(params, c);
                 Method m = testClass.getMethod((methodNames.get(0)), c);
-                                                                            //TODo: "when" backup with flag
                 m.invoke(inst, convertedParams);
             }
             if(firstWord.equals("Then")){
                 HashMap<String, ArrayList<ArrayList>> right_method = checkClassTree(sentence, testClass);
                 if(right_method.isEmpty()){
-                    throw new GivenNotFoundException();
+                    throw new ThenNotFoundException();
                 }
                 List<String> methodNames = right_method.entrySet().stream().map(Map.Entry::getKey).collect(Collectors.toList());
                 List<ArrayList<ArrayList>> methodParams = right_method.entrySet().stream().map(Map.Entry::getValue).collect(Collectors.toList());
@@ -283,7 +313,13 @@ public class StoryTesterImpl implements StoryTester {
                         excep.setStoryExpected(expected);
                         excep.setStoryActual(actual);
                     }
-                    //ToDo: restore the object
+                    Field[] fields = testClass.getDeclaredFields();
+                    int counter = 0;
+                    for (Field f : fields) {
+                        f.setAccessible(true);
+                        f.set(inst,backup[counter]);
+                        counter++;
+                    }
                 }
             }
         }
@@ -297,6 +333,101 @@ public class StoryTesterImpl implements StoryTester {
         if(story == null || testClass == null){
             throw new IllegalArgumentException();
         }
-
+        boolean already = false;
+        Object[] backup = null;
+        Object inst = testClass.newInstance();
+        ArrayList<ArrayList> sentences = parser(story);
+        StoryTestExceptionImpl excep = new StoryTestExceptionImpl();
+        for(ArrayList<String> sentence: sentences){
+            String firstWord = sentence.get(0);
+            if(firstWord.equals("Given")){
+                HashMap<String, ArrayList<ArrayList>> right_method = checkClassTree(sentence, testClass);
+                if(right_method.isEmpty()){
+                    Class<?>[] nested = testClass.getDeclaredClasses();
+                    for(Class<?> cla: nested){
+                        try{
+                            if(cla.isInterface()){
+                                continue;
+                            }
+                            testOnNestedClasses(story,cla);
+                            return;
+                        }catch(StoryTestExceptionImpl | WhenNotFoundException | ThenNotFoundException e1){
+                            throw e1;
+                        }catch (GivenNotFoundException e2){
+                            continue;
+                        }
+                    }
+                    throw new GivenNotFoundException();
+                }
+                List<String> methodNames = right_method.entrySet().stream().map(Map.Entry::getKey).collect(Collectors.toList());
+                List<ArrayList<ArrayList>> methodParams = right_method.entrySet().stream().map(Map.Entry::getValue).collect(Collectors.toList());
+                ArrayList<String> params = methodParams.get(0).get(0);
+                Class[] c = new Class[params.size()];
+                Object[] convertedParams = convertParams(params, c);
+                Method m = testClass.getMethod((methodNames.get(0)), c);
+                m.invoke(inst, convertedParams);
+            }
+            if(firstWord.equals("When")){
+                HashMap<String, ArrayList<ArrayList>> right_method = checkClassTree(sentence, testClass);
+                if(right_method.isEmpty()){
+                    throw new WhenNotFoundException();
+                }
+                if(!already){
+                    Field[] origin = testClass.getDeclaredFields();
+                    backup = doBackup(origin);
+                    already = true;
+                }
+                List<String> methodNames = right_method.entrySet().stream().map(Map.Entry::getKey).collect(Collectors.toList());
+                List<ArrayList<ArrayList>> methodParams = right_method.entrySet().stream().map(Map.Entry::getValue).collect(Collectors.toList());
+                ArrayList<String> params = methodParams.get(0).get(0);
+                Class[] c = new Class[params.size()];
+                Object[] convertedParams = convertParams(params, c);
+                Method m = testClass.getMethod((methodNames.get(0)), c);
+                m.invoke(inst, convertedParams);
+            }
+            if(firstWord.equals("Then")){
+                HashMap<String, ArrayList<ArrayList>> right_method = checkClassTree(sentence, testClass);
+                if(right_method.isEmpty()){
+                    throw new ThenNotFoundException();
+                }
+                List<String> methodNames = right_method.entrySet().stream().map(Map.Entry::getKey).collect(Collectors.toList());
+                List<ArrayList<ArrayList>> methodParams = right_method.entrySet().stream().map(Map.Entry::getValue).collect(Collectors.toList());
+                ArrayList<ArrayList> runs = methodParams.get(0);
+                ArrayList<String> expected = new ArrayList<>();
+                ArrayList<String> actual = new ArrayList<>();
+                boolean success = false;
+                for(ArrayList<String> run: runs){
+                    Class[] c = new Class[run.size()];
+                    Object[] convertedParams = convertParams(run, c);
+                    Method m = testClass.getMethod((methodNames.get(0)), c);
+                    try{
+                        m.invoke(inst, convertedParams);
+                        success = true;
+                        break;
+                    }catch(ComparisonFailure e){
+                        expected.add(e.getExpected());
+                        actual.add(e.getActual());
+                    }
+                }
+                if(!success){
+                    excep.incNumFails();
+                    if(excep.getNumFail() == 1){
+                        excep.setSentence(joinSentence(sentence));
+                        excep.setStoryExpected(expected);
+                        excep.setStoryActual(actual);
+                    }
+                    Field[] fields = testClass.getDeclaredFields();
+                    int counter = 0;
+                    for (Field f : fields) {
+                        f.setAccessible(true);
+                        f.set(inst,backup[counter]);
+                        counter++;
+                    }
+                }
+            }
+        }
+        if(excep.getNumFail() > 0){
+            throw excep;
+        }
     }
 }
