@@ -1,13 +1,12 @@
 package tests;
 
 
-import org.junit.Assert;
-import org.junit.Before;
-import org.junit.Test;
-
 import Provided.StoryTestException;
 import Provided.StoryTester;
 import Solution.StoryTesterImpl;
+import org.junit.Assert;
+import org.junit.Before;
+import org.junit.Test;
 
 import java.util.Arrays;
 
