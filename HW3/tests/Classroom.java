@@ -20,10 +20,6 @@ public class Classroom {
     }
 
     public String classroomNoiseCondition() {
-        if(classroomCondition().equals("not-full")) {
-            return "quiet";
-        } else {
-            return "noisy";
-        }
+        return this.freeSpace > 0 ? "quiet" : "noisy";
     }
 }

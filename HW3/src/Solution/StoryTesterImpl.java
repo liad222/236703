@@ -221,7 +221,6 @@ public class StoryTesterImpl implements StoryTester {
         return str;
     }
 
-
     protected Object[] doBackup(Field[] origin, Object inst) throws IllegalAccessException {
         Object[] backup = new Object[origin.length];
         int counter = 0;
