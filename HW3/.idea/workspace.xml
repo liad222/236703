@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="858dcfa1-44ea-4558-a5ad-2cd2695e62a5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/Solution/StoryTesterImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Solution/StoryTesterImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Classroom.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Classroom.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/ClassroomTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/ClassroomTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/DogStoryDerivedTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/DogStoryDerivedTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -22,8 +19,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Solution/StoryTesterImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="250">
-              <caret line="297" column="37" selection-start-line="297" selection-start-column="37" selection-end-line="297" selection-end-column="37" />
+            <state relative-caret-position="400">
+              <caret line="243" column="38" lean-forward="true" selection-start-line="243" selection-start-column="38" selection-end-line="243" selection-end-column="38" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -55,8 +52,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tests/ClassroomStoryTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="528">
-              <caret line="29" column="1" selection-start-line="29" selection-start-column="1" selection-end-line="29" selection-end-column="1" />
+            <state relative-caret-position="203">
+              <caret line="14" column="12" lean-forward="true" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="12" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#285#286#0" expanded="true" />
@@ -95,8 +92,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tests/ClassroomTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="223">
-              <caret line="417" selection-start-line="417" selection-end-line="417" />
+            <state relative-caret-position="267">
+              <caret line="416" selection-start-line="416" selection-end-line="416" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#15882#15890#0" expanded="true" />
@@ -139,6 +136,7 @@
       <find>doBack</find>
       <find>declared</find>
       <find>doB</find>
+      <find>doBa</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -156,9 +154,9 @@
         <option value="$PROJECT_DIR$/tests/ClassroomStoryDerivedTest.java" />
         <option value="$PROJECT_DIR$/tests/ClassroomStoryTest.java" />
         <option value="$PROJECT_DIR$/tests/Classroom.java" />
-        <option value="$PROJECT_DIR$/tests/ClassroomTest.java" />
         <option value="$PROJECT_DIR$/tests/DogStoryDerivedTest.java" />
         <option value="$PROJECT_DIR$/src/Solution/StoryTesterImpl.java" />
+        <option value="$PROJECT_DIR$/tests/ClassroomTest.java" />
       </list>
     </option>
   </component>
@@ -329,21 +327,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="All_in_HW3 - 2019.05.17 at 17h 05m 15s.xml">
-      <configuration name="All in HW3" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_in_HW3 - 2019.05.17 at 17h 07m 16s.xml">
-      <configuration name="All in HW3" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_in_HW3 - 2019.05.17 at 17h 08m 12s.xml">
-      <configuration name="All in HW3" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_in_HW3 - 2019.05.17 at 17h 12m 37s.xml">
-      <configuration name="All in HW3" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_in_HW3 - 2019.05.17 at 17h 15m 11s.xml">
-      <configuration name="All in HW3" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="All_in_HW3 - 2019.05.17 at 17h 26m 17s.xml">
       <configuration name="All in HW3" configurationId="JUnit" />
     </history-entry>
@@ -359,9 +342,24 @@
     <history-entry file="All_in_HW3 - 2019.05.17 at 17h 31m 56s.xml">
       <configuration name="All in HW3" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="All_in_HW3 - 2019.05.17 at 17h 49m 56s.xml">
+      <configuration name="All in HW3" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_HW3 - 2019.05.17 at 17h 53m 23s.xml">
+      <configuration name="All in HW3" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_HW3 - 2019.05.17 at 17h 53m 43s.xml">
+      <configuration name="All in HW3" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_HW3 - 2019.05.17 at 17h 57m 33s.xml">
+      <configuration name="All in HW3" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_HW3 - 2019.05.17 at 18h 01m 56s.xml">
+      <configuration name="All in HW3" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="49077000" />
+    <option name="totallyTimeSpent" value="50049000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-11" y="-11" width="1942" height="1046" extended-state="6" />
@@ -377,8 +375,8 @@
       <window_info id="Learn" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.5556886" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.061077844" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.28023952" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.26467067" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -407,15 +405,15 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/tests/ClassroomTest.java</url>
-          <line>417</line>
+          <line>416</line>
           <properties />
-          <option name="timeStamp" value="14" />
+          <option name="timeStamp" value="18" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Solution/StoryTesterImpl.java</url>
-          <line>414</line>
+          <line>402</line>
           <properties />
-          <option name="timeStamp" value="17" />
+          <option name="timeStamp" value="19" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -609,18 +607,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/ClassroomStoryTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="29" column="1" selection-start-line="29" selection-start-column="1" selection-end-line="29" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#285#286#0" expanded="true" />
-            <element signature="e#342#343#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tests/ClassroomStoryDerivedTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="175">
@@ -633,10 +619,22 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/tests/ClassroomStoryTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="203">
+          <caret line="14" column="12" lean-forward="true" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="12" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#285#286#0" expanded="true" />
+            <element signature="e#342#343#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/tests/ClassroomTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="223">
-          <caret line="417" selection-start-line="417" selection-end-line="417" />
+        <state relative-caret-position="267">
+          <caret line="416" selection-start-line="416" selection-end-line="416" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#15882#15890#0" expanded="true" />
@@ -647,8 +645,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Solution/StoryTesterImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="297" column="37" selection-start-line="297" selection-start-column="37" selection-end-line="297" selection-end-column="37" />
+        <state relative-caret-position="400">
+          <caret line="243" column="38" lean-forward="true" selection-start-line="243" selection-start-column="38" selection-end-line="243" selection-end-column="38" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

@@ -126,8 +126,7 @@ public class ClassroomTest {
                 + "Then the classroom is not-full";
 
         badStory2 = "Given a classroom with a capacity of 50\n"
-                + "When the number of students in the classroom is 40\n"
-                + "When the number of broken chairs in the classroom is 10\n"
+                + "When the number of students in the classroom is 60\n"
                 + "Then the classroom is not-full\n"
                 + "When the number of students in the classroom is 40\n"
                 + "Then the classroom is not-full";
@@ -415,7 +414,7 @@ public class ClassroomTest {
     @Test
     public void backUpTest() throws Exception {
         try {
-            tester.testOnNestedClasses(badStory2, derivedTestClass);
+            tester.testOnNestedClasses(badStory2, testClass);
             Assert.assertTrue(false);
         } catch (StoryTestException e) {
             Assert.assertTrue(true);
