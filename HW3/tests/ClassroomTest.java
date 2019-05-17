@@ -1,8 +1,10 @@
 package tests;
 
 
+import Provided.GivenNotFoundException;
 import Provided.StoryTestException;
 import Provided.StoryTester;
+import Provided.WordNotFoundException;
 import Solution.StoryTesterImpl;
 import org.junit.Assert;
 import org.junit.Before;
@@ -32,6 +34,12 @@ public class ClassroomTest {
     private String thenBadStory3;
     private String thenBadStory4;
     private String thenStory2;
+    private String givenBadStory;
+    private String thenBadStory5;
+    private String whenBadStory;
+    private String givenBadStory2;
+    private String thenBadStory6;
+    private String whenBadStory2;
     private Class<?> testClass;
     private Class<?> derivedTestClass;
     private Class<?> nestedNestedTestClass;
@@ -112,6 +120,37 @@ public class ClassroomTest {
         thenStory2 = "Given a classroom that the number of seats in it is 1337\n"
                 + "When the number of students in the classroom is 1378 and the number among them that are standing is 42\n"
                 + "Then the classroom is full and noisy or the classroom is not-full and quiet";
+
+        givenBadStory = "Given a bathroom with a capacity of 75\n"
+                + "When the number of students in the classroom is 60\n"
+                + "Then the classroom is not-full\n"
+                + "When the number of students in the classroom is 80\n"
+                + "Then the classroom is full";
+
+        whenBadStory = "Given a classroom with a capacity of 75\n"
+                + "When the number of students in the bathroom is 60\n"
+                + "Then the classroom is not-full\n"
+                + "When the number of students in the classroom is 80\n"
+                + "Then the classroom is full";
+
+        thenBadStory5 = "Given a classroom with a capacity of 75\n"
+                + "When the number of students in the classroom is 60\n"
+                + "Then the bathroom is not-full\n"
+                + "When the number of students in the classroom is 80\n"
+                + "Then the classroom is full";
+
+        givenBadStory2 = "Given a bathroom that the number of seats in it is 1337\n"
+                + "When the number of students in the classroom is 1378 and the number among them that are standing is 42\n"
+                + "Then the classroom is not-full";
+
+        whenBadStory2 = "Given a classroom that the number of seats in it is 1337\n"
+                + "When the number of students in the classroom is 1378 and the number among them that are sleeping is 42\n"
+                + "Then the classroom is not-full";
+
+        thenBadStory6 = "Given a classroom that the number of seats in it is 1337\n"
+                + "When the number of students in the classroom is 1378 and the number among them that are standing is 42\n"
+                + "Then the bathroom is not-full";
+
 
         //outside tests//
         goodStory = "Given a classroom with a capacity of 75\n"
@@ -410,7 +449,71 @@ public class ClassroomTest {
             Assert.assertTrue(false);
         }
     }
+    @Test
+    public void test21() throws Exception {
+        try {
+            tester.testOnInheritanceTree(givenBadStory, testClass);
+            Assert.assertTrue(false);
+        } catch (WordNotFoundException e) {
+            Assert.assertTrue(true);
+            Assert.assertEquals("Provided.GivenNotFoundException", e.toString());
+        }
+    }
 
+    @Test
+    public void test22() throws Exception {
+        try {
+            tester.testOnInheritanceTree(thenBadStory5, testClass);
+            Assert.assertTrue(false);
+        } catch (WordNotFoundException e) {
+            Assert.assertTrue(true);
+            Assert.assertEquals("Provided.ThenNotFoundException", e.toString());
+        }
+    }
+
+    @Test
+    public void test23() throws Exception {
+        try {
+            tester.testOnInheritanceTree(whenBadStory, testClass);
+            Assert.assertTrue(false);
+        } catch (WordNotFoundException e) {
+            Assert.assertTrue(true);
+            Assert.assertEquals("Provided.WhenNotFoundException", e.toString());
+        }
+    }
+
+    @Test
+    public void test24() throws Exception {
+        try {
+            tester.testOnNestedClasses(givenBadStory2, derivedTestClass);
+            Assert.assertTrue(false);
+        } catch (WordNotFoundException e) {
+            Assert.assertTrue(true);
+            Assert.assertEquals("Provided.GivenNotFoundException", e.toString());
+        }
+    }
+
+    @Test
+    public void test25() throws Exception {
+        try {
+            tester.testOnNestedClasses(thenBadStory6, derivedTestClass);
+            Assert.assertTrue(false);
+        } catch (WordNotFoundException e) {
+            Assert.assertTrue(true);
+            Assert.assertEquals("Provided.ThenNotFoundException", e.toString());
+        }
+    }
+
+    @Test
+    public void test26() throws Exception {
+        try {
+            tester.testOnNestedClasses(whenBadStory2, derivedTestClass);
+            Assert.assertTrue(false);
+        } catch (WordNotFoundException e) {
+            Assert.assertTrue(true);
+            Assert.assertEquals("Provided.WhenNotFoundException", e.toString());
+        }
+    }
     @Test
     public void backUpTest() throws Exception {
         try {
@@ -424,6 +527,8 @@ public class ClassroomTest {
             Assert.assertEquals(1, e.getNumFail());
         }
     }
+
+
 
 }
 
