@@ -104,11 +104,9 @@ public class StoryTesterImpl implements StoryTester {
         ArrayList<String> param_inst = new ArrayList<>();
         params.add(param_inst);
         for(int counter = 0; counter < sentence.size(); counter++){
-            if(words[words_counter].charAt(0) == '&'){
-                ArrayList<String> temp = params.get(params.size() - 1);
-                temp.add(sentence.get(counter));
-                words_counter++;
-                continue;
+            if(words_counter > words.length - 1 && !(sentence.get(counter).equals("or"))){
+                params = new ArrayList<>();
+                return params;
             }
             if(sentence.get(counter).equals("or")){
                 words_counter = 0;
@@ -116,7 +114,13 @@ public class StoryTesterImpl implements StoryTester {
                 params.add(new_param_inst);
                 continue;
             }
-            if(!(words[counter].equals(sentence.get(counter)))){
+            if(words[words_counter].charAt(0) == '&'){
+                ArrayList<String> temp = params.get(params.size() - 1);
+                temp.add(sentence.get(counter));
+                words_counter++;
+                continue;
+            }
+            if(!(words[words_counter].equals(sentence.get(counter)))){
                 params = new ArrayList<>();
                 return params;
             }

@@ -1,17 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="858dcfa1-44ea-4558-a5ad-2cd2695e62a5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/tests/Classroom.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/ClassroomStoryDerivedTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/ClassroomStoryTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/ClassroomTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HW3.iml" beforeDir="false" afterPath="$PROJECT_DIR$/HW3.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/HW3/Solution/StoryTesterImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/DogTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/DogTest.java" afterDir="false" />
-    </list>
+    <list default="true" id="858dcfa1-44ea-4558-a5ad-2cd2695e62a5" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -27,10 +17,36 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Solution/StoryTesterImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="106" column="23" lean-forward="true" selection-start-line="106" selection-start-column="23" selection-end-line="106" selection-end-column="23" />
+            <state relative-caret-position="2091">
+              <caret line="123" column="43" lean-forward="true" selection-start-line="123" selection-start-column="43" selection-end-line="123" selection-end-column="43" />
               <folding>
                 <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tests/ClassroomTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="801">
+              <caret line="85" selection-start-line="85" selection-end-line="85" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tests/ClassroomStoryTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-57">
+              <caret line="11" column="5" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#285#286#0" expanded="true" />
+                <element signature="e#342#343#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -45,27 +61,11 @@
                 <element signature="e#112#113#0" expanded="true" />
                 <element signature="e#153#154#0" expanded="true" />
                 <element signature="e#215#216#0" expanded="true" />
-                <element signature="e#264#265#0" expanded="true" />
+                <element signature="e#265#266#0" expanded="true" />
                 <element signature="e#327#328#0" expanded="true" />
-                <element signature="e#356#357#0" expanded="true" />
+                <element signature="e#381#382#0" expanded="true" />
                 <element signature="e#423#424#0" expanded="true" />
-                <element signature="e#483#484#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tests/ClassroomStoryTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="387">
-              <caret line="29" column="1" lean-forward="true" selection-start-line="29" selection-start-column="1" selection-end-line="29" selection-end-column="1" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#285#286#0" expanded="true" />
-                <element signature="e#336#337#0" expanded="true" />
-                <element signature="e#454#455#0" expanded="true" />
-                <element signature="e#502#503#0" expanded="true" />
+                <element signature="e#486#487#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -74,38 +74,12 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tests/ClassroomStoryDerivedTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="175">
-              <caret line="7" column="31" lean-forward="true" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
+            <state relative-caret-position="119">
+              <caret line="7" column="31" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#266#267#0" expanded="true" />
                 <element signature="e#312#313#0" expanded="true" />
-                <element signature="e#488#489#0" expanded="true" />
-                <element signature="e#544#545#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tests/DogTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="254">
-              <caret line="16" column="13" selection-end-line="94" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tests/ClassroomTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="100">
-              <caret line="85" selection-start-line="85" selection-end-line="85" />
-              <folding>
-                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -143,18 +117,18 @@
         <option value="$PROJECT_DIR$/src/Solution/StoryTestExceptionImpl.java" />
         <option value="$PROJECT_DIR$/tests/DogStoryDerivedTest.java" />
         <option value="$PROJECT_DIR$/tests/DogStoryTest.java" />
-        <option value="$PROJECT_DIR$/src/Solution/StoryTesterImpl.java" />
         <option value="$PROJECT_DIR$/tests/DogTest.java" />
         <option value="$PROJECT_DIR$/tests/ClassroomStoryDerivedTest.java" />
         <option value="$PROJECT_DIR$/tests/ClassroomStoryTest.java" />
         <option value="$PROJECT_DIR$/tests/Classroom.java" />
         <option value="$PROJECT_DIR$/tests/ClassroomTest.java" />
+        <option value="$PROJECT_DIR$/src/Solution/StoryTesterImpl.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="7">
     <option name="width" value="960" />
-    <option name="height" value="1024" />
+    <option name="height" value="1025" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -162,8 +136,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -191,6 +163,8 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -314,60 +288,61 @@
       <workItem from="1557557705676" duration="4945000" />
       <workItem from="1557563557101" duration="7869000" />
       <workItem from="1557931590673" duration="3701000" />
+      <workItem from="1558094441967" duration="2443000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ClassroomTest - 2019.05.15 at 18h 33m 40s.xml">
+    <history-entry file="ClassroomTest - 2019.05.17 at 15h 16m 25s.xml">
       <configuration name="ClassroomTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ClassroomTest - 2019.05.15 at 18h 35m 40s.xml">
+    <history-entry file="ClassroomTest - 2019.05.17 at 15h 22m 54s.xml">
       <configuration name="ClassroomTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ClassroomTest - 2019.05.15 at 18h 39m 16s.xml">
+    <history-entry file="ClassroomTest - 2019.05.17 at 15h 23m 08s.xml">
       <configuration name="ClassroomTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ClassroomTest - 2019.05.15 at 18h 39m 41s.xml">
+    <history-entry file="ClassroomTest - 2019.05.17 at 15h 24m 55s.xml">
       <configuration name="ClassroomTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ClassroomTest - 2019.05.15 at 18h 40m 32s.xml">
+    <history-entry file="ClassroomTest - 2019.05.17 at 15h 25m 26s.xml">
       <configuration name="ClassroomTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ClassroomTest_test2 - 2019.05.15 at 18h 41m 34s.xml">
-      <configuration name="ClassroomTest.test2" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ClassroomTest_test2 - 2019.05.15 at 18h 43m 24s.xml">
-      <configuration name="ClassroomTest.test2" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ClassroomTest - 2019.05.15 at 18h 43m 57s.xml">
+    <history-entry file="ClassroomTest - 2019.05.17 at 15h 26m 36s.xml">
       <configuration name="ClassroomTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ClassroomTest - 2019.05.15 at 18h 45m 59s.xml">
+    <history-entry file="ClassroomTest - 2019.05.17 at 15h 26m 54s.xml">
       <configuration name="ClassroomTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ClassroomTest - 2019.05.15 at 18h 47m 32s.xml">
+    <history-entry file="ClassroomTest - 2019.05.17 at 15h 27m 06s.xml">
+      <configuration name="ClassroomTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ClassroomTest - 2019.05.17 at 15h 28m 45s.xml">
+      <configuration name="ClassroomTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ClassroomTest - 2019.05.17 at 15h 29m 44s.xml">
       <configuration name="ClassroomTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="40053000" />
+    <option name="totallyTimeSpent" value="42496000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-11" y="-11" width="1942" height="1046" extended-state="6" />
+    <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Learn" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2308108" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23481782" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info id="Learn" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.55449104" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.4491018" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.41030195" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.44760212" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -395,16 +370,16 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Solution/StoryTesterImpl.java</url>
-          <line>106</line>
-          <properties />
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/tests/ClassroomTest.java</url>
           <line>85</line>
           <properties />
           <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Solution/StoryTesterImpl.java</url>
+          <line>94</line>
+          <properties />
+          <option name="timeStamp" value="13" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -481,14 +456,12 @@
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_212/src.zip!/java/lang/ClassLoader.java" />
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_212/src.zip!/java/net/URLClassLoader.java" />
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_212/src.zip!/java/security/SecureClassLoader.java" />
-    <entry file="jar://$PROJECT_DIR$/../junit-4.13-beta-2.jar!/org/junit/runners/BlockJUnit4ClassRunner.class" />
     <entry file="jar://$PROJECT_DIR$/../junit-4.13-beta-2.jar!/org/junit/runner/JUnitCore.class" />
     <entry file="jar://$PROJECT_DIR$/../junit-4.13-beta-2.jar!/org/junit/Assert.class" />
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_212/src.zip!/java/lang/reflect/Method.java" />
     <entry file="jar://$PROJECT_DIR$/../junit-4.13-beta-2.jar!/org/junit/ComparisonFailure.class" />
     <entry file="jar://$PROJECT_DIR$/../junit-4.13-beta-2.jar!/org/junit/runner/notification/Failure.class" />
     <entry file="jar://$PROJECT_DIR$/../junit-4.13-beta-2.jar!/org/junit/runner/notification/RunNotifier.class" />
-    <entry file="jar://$PROJECT_DIR$/../junit-4.13-beta-2.jar!/org/junit/runners/ParentRunner.class" />
     <entry file="jar://$PROJECT_DIR$/../junit-4.13-beta-2.jar!/org/junit/internal/runners/model/EachTestNotifier.class" />
     <entry file="file://$PROJECT_DIR$/src/Solution/StoryTestExceptionImpl.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -502,7 +475,6 @@
     </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_212/src.zip!/java/lang/reflect/Field.java" />
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_212/src.zip!/java/lang/reflect/AccessibleObject.java" />
-    <entry file="jar://$PROJECT_DIR$/../junit-4.13-beta-2.jar!/org/junit/internal/runners/model/ReflectiveCallable.class" />
     <entry file="file://$PROJECT_DIR$/tests/Dog.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="50">
@@ -526,47 +498,6 @@
           <caret line="5" column="21" selection-end-line="18" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/DogTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="254">
-          <caret line="16" column="13" selection-end-line="94" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/Classroom.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="11" selection-start-column="11" selection-end-column="11" />
-          <folding>
-            <element signature="e#112#113#0" expanded="true" />
-            <element signature="e#153#154#0" expanded="true" />
-            <element signature="e#215#216#0" expanded="true" />
-            <element signature="e#264#265#0" expanded="true" />
-            <element signature="e#327#328#0" expanded="true" />
-            <element signature="e#356#357#0" expanded="true" />
-            <element signature="e#423#424#0" expanded="true" />
-            <element signature="e#483#484#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/ClassroomStoryTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="387">
-          <caret line="29" column="1" lean-forward="true" selection-start-line="29" selection-start-column="1" selection-end-line="29" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#285#286#0" expanded="true" />
-            <element signature="e#336#337#0" expanded="true" />
-            <element signature="e#454#455#0" expanded="true" />
-            <element signature="e#502#503#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -600,20 +531,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/ClassroomStoryDerivedTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="7" column="31" lean-forward="true" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#266#267#0" expanded="true" />
-            <element signature="e#312#313#0" expanded="true" />
-            <element signature="e#488#489#0" expanded="true" />
-            <element signature="e#544#545#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="99">
@@ -621,9 +538,87 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/tests/DogTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="254">
+          <caret line="15" column="3" selection-end-line="93" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/Classroom.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="11" selection-start-column="11" selection-end-column="11" />
+          <folding>
+            <element signature="e#112#113#0" expanded="true" />
+            <element signature="e#153#154#0" expanded="true" />
+            <element signature="e#215#216#0" expanded="true" />
+            <element signature="e#265#266#0" expanded="true" />
+            <element signature="e#327#328#0" expanded="true" />
+            <element signature="e#381#382#0" expanded="true" />
+            <element signature="e#423#424#0" expanded="true" />
+            <element signature="e#486#487#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/ClassroomStoryDerivedTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="31" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#266#267#0" expanded="true" />
+            <element signature="e#312#313#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../junit-4.13-beta-2.jar!/org/junit/runners/BlockJUnit4ClassRunner.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="66" selection-start-line="66" selection-end-line="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../junit-4.13-beta-2.jar!/org/junit/runners/ParentRunner.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="31">
+          <caret line="210" selection-start-line="210" selection-end-line="210" />
+          <folding>
+            <element signature="e#2889#2890#0" expanded="true" />
+            <element signature="e#2941#2942#0" expanded="true" />
+            <element signature="e#7839#8003#0" expanded="true" />
+            <element signature="e#8002#8003#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/ClassroomStoryTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-57">
+          <caret line="11" column="5" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#285#286#0" expanded="true" />
+            <element signature="e#342#343#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../junit-4.13-beta-2.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="65">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/tests/ClassroomTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
+        <state relative-caret-position="801">
           <caret line="85" selection-start-line="85" selection-end-line="85" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -633,8 +628,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Solution/StoryTesterImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="106" column="23" lean-forward="true" selection-start-line="106" selection-start-column="23" selection-end-line="106" selection-end-column="23" />
+        <state relative-caret-position="2091">
+          <caret line="123" column="43" lean-forward="true" selection-start-line="123" selection-start-column="43" selection-end-line="123" selection-end-column="43" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
