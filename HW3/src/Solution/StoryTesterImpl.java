@@ -11,6 +11,8 @@ import java.util.stream.Collectors;
 
 public class StoryTesterImpl implements StoryTester {
     private Object parent = null;
+
+
     //receives a story and breaks it down to a list of sentences.
     protected ArrayList<ArrayList> parser(String story){
         ArrayList<ArrayList> sentences = new ArrayList<>();
@@ -221,21 +223,25 @@ public class StoryTesterImpl implements StoryTester {
         return str;
     }
 
+    //receives an array of field to backup and the instance to backup, and returns
+    //an array of Objects that contains the instance current fields value.
+    //at first, trying to clone the field. if not possible, trying to use copy constructor on the field.
+    //if the field doesn't have a copy constructor, the value itself will be add to the returned array (a reference)
     protected Object[] doBackup(Field[] origin, Object inst) throws IllegalAccessException {
         Object[] backup = new Object[origin.length];
         int counter = 0;
         for(Field f:origin){
             try{
                 f.setAccessible(true);
-                Class<?> cl = f.getClass();
-                Method c = f.getClass().getDeclaredMethod("clone");
+                Class<?> cl = f.getType();
+                Method c = cl.getDeclaredMethod("clone");
                 c.setAccessible(true);
                 Object fNew = c.invoke(f.get(inst));
                 backup[counter] = fNew;
                 counter++;
             }catch(Exception e){
                 try{
-                    Constructor<?> c = f.getClass().getDeclaredConstructor(f.getClass());
+                    Constructor<?> c = f.getType().getDeclaredConstructor(f.getType());
                     c.setAccessible(true);
                     Object fNew = c.newInstance(f.get(inst));
                     backup[counter] = fNew;
@@ -250,6 +256,20 @@ public class StoryTesterImpl implements StoryTester {
     }
 
 
+
+    /**
+     * Runs a given story on an instance of a given class, or an instances of its
+     * ancestors. before running the story use must create an instance of the given
+     * class.
+     * Does a backup before each When sentence, if a Then sentence fails, restores the last backup.
+     * Keeps a track of the failed then sentences - a counter for the number of fails, the first failed sentence
+     *                                              and the actual and expected values of the first sentence.
+     *
+     * @param story contains the text of the story to test, the string is
+     * divided to line using '\n'. each word in a line is separated by space
+     * (' ').
+     * @param testClass the test class which the story should be run on.
+     */
     @Override
     public void testOnInheritanceTree(String story, Class<?> testClass) throws Exception {
         if(story == null || testClass == null){
@@ -347,6 +367,22 @@ public class StoryTesterImpl implements StoryTester {
         }
     }
 
+
+
+    /**
+     * Runs a given story on an instance of a given class, or an instances of its
+     * ancestors, or its nested class (and their ancestors) as described by the
+     * the assignment document. before running the story use must create an instance
+     * of the given correct class to run story on.
+     * Does a backup before each When sentence, if a Then sentence fails, restores the last backup.
+     * Keeps a track of the failed then sentences - a counter for the number of fails, the first failed sentence
+     *                                              and the actual and expected values of the first sentence.
+     *
+     * @param story contains the text of the story to test, the string is
+     * divided to line using '\n'. each word in a line is separated by space
+     * (' ').
+     * @param testClass the test class which the story should be run on.
+     */
     @Override
     public void testOnNestedClasses(String story, Class<?> testClass) throws Exception {
         if(story == null || testClass == null){

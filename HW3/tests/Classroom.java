@@ -1,10 +1,19 @@
 package tests;
 
-public class Classroom {
+public class Classroom implements Cloneable{
     private Integer freeSpace;
 
+    public Object clone()throws CloneNotSupportedException{
+        return new Classroom(this.freeSpace);
+    }
+    public Classroom(Classroom c){
+        this.freeSpace = c.getFreeSpace();
+    }
     public Classroom(Integer capacity) {
         this.freeSpace = capacity;
+    }
+    public int getFreeSpace(){
+        return this.freeSpace;
     }
 
     public void numberOfStudents(Integer numberOfStudents) {
