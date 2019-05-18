@@ -293,7 +293,6 @@ public class StoryTesterImpl implements StoryTester {
                 Class[] c = new Class[params.size()];
                 Object[] convertedParams = convertParams(params, c);
                 Method m = methodNames.get(0);
-                        //testClass.getMethod((methodNames.get(0)), c);
                 m.setAccessible(true);
                 m.invoke(inst, convertedParams);
             }
@@ -313,7 +312,6 @@ public class StoryTesterImpl implements StoryTester {
                 Class[] c = new Class[params.size()];
                 Object[] convertedParams = convertParams(params, c);
                 Method m = methodNames.get(0);
-                        //testClass.getMethod((methodNames.get(0)), c);
                 m.setAccessible(true);
                 m.invoke(inst, convertedParams);
             }
@@ -332,7 +330,6 @@ public class StoryTesterImpl implements StoryTester {
                     Class[] c = new Class[run.size()];
                     Object[] convertedParams = convertParams(run, c);
                     Method m = methodNames.get(0);
-                            //testClass.getMethod((methodNames.get(0)), c);
                     try{
                         m.setAccessible(true);
                         m.invoke(inst, convertedParams);
@@ -427,7 +424,6 @@ public class StoryTesterImpl implements StoryTester {
                 Class[] c = new Class[params.size()];
                 Object[] convertedParams = convertParams(params, c);
                 Method m = methodNames.get(0);
-                        //testClass.getMethod((methodNames.get(0)), c);
                 m.setAccessible(true);
                 m.invoke(inst, convertedParams);
             }
@@ -447,7 +443,6 @@ public class StoryTesterImpl implements StoryTester {
                 Class[] c = new Class[params.size()];
                 Object[] convertedParams = convertParams(params, c);
                 Method m = methodNames.get(0);
-                        //testClass.getMethod((methodNames.get(0)), c);
                 m.setAccessible(true);
                 m.invoke(inst, convertedParams);
             }
@@ -466,7 +461,6 @@ public class StoryTesterImpl implements StoryTester {
                     Class[] c = new Class[run.size()];
                     Object[] convertedParams = convertParams(run, c);
                     Method m = methodNames.get(0);
-                            //testClass.getMethod((methodNames.get(0)), c);
                     try{
                         m.setAccessible(true);
                         m.invoke(inst, convertedParams);
