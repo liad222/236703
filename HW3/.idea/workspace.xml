@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="858dcfa1-44ea-4558-a5ad-2cd2695e62a5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/Solution/StoryTesterImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Solution/StoryTesterImpl.java" afterDir="false" />
-    </list>
+    <list default="true" id="858dcfa1-44ea-4558-a5ad-2cd2695e62a5" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -19,110 +17,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Solution/StoryTesterImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="499">
-              <caret line="497" lean-forward="true" selection-start-line="497" selection-end-line="497" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Solution/StoryTestExceptionImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="8" column="13" lean-forward="true" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Solution/Given.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="9" column="20" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="23" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Solution/Then.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="250">
-              <caret line="10" column="19" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Solution/When.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="250">
-              <caret line="10" selection-start-line="10" selection-end-line="10" selection-end-column="19" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/backupTests/LionStoryTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="8" column="10" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/backupTests/Snake.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
-              <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/backupTests/SnakeStoryTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="400">
-              <caret line="20" column="49" lean-forward="true" selection-start-line="20" selection-start-column="49" selection-end-line="20" selection-end-column="49" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/backupTests/Tiger.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="400">
-              <caret line="16" column="13" lean-forward="true" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/backupTests/TigerStoryTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="14" selection-start-column="14" selection-end-column="14" />
+            <state relative-caret-position="-352">
+              <caret line="39" column="7" selection-start-line="39" selection-start-column="7" selection-end-line="39" selection-end-column="7" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -191,6 +87,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -209,11 +106,15 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="Solution" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="HW3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HW3" type="462c0819:PsiDirectoryNode" />
+              <item name="tests" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -249,20 +150,25 @@
     </option>
   </component>
   <component name="RunManager" selected="JUnit.All in HW3">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="Main" />
-      <module name="HW3" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="All in HW3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="HW3" />
       <option name="PACKAGE_NAME" value="" />
       <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BackupTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="HW3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="backupTests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="backupTests" />
+      <option name="MAIN_CLASS_NAME" value="backupTests.BackupTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -316,6 +222,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.All in HW3" />
+        <item itemvalue="JUnit.BackupTest" />
         <item itemvalue="JUnit.ClassroomTest" />
         <item itemvalue="JUnit.ClassroomTest.test2" />
         <item itemvalue="JUnit.DogTest" />
@@ -348,19 +255,13 @@
       <workItem from="1558108567190" duration="2960000" />
       <workItem from="1558114425172" duration="1218000" />
       <workItem from="1558167602274" duration="705000" />
+      <workItem from="1558168735054" duration="92000" />
+      <workItem from="1558171338175" duration="9000" />
+      <workItem from="1558172181358" duration="1160000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="All_in_HW3 - 2019.05.17 at 19h 40m 32s.xml">
-      <configuration name="All in HW3" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_in_HW3 - 2019.05.17 at 19h 40m 53s.xml">
-      <configuration name="All in HW3" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_in_HW3 - 2019.05.17 at 19h 43m 39s.xml">
-      <configuration name="All in HW3" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="All_in_HW3 - 2019.05.17 at 20h 41m 01s.xml">
       <configuration name="All in HW3" configurationId="JUnit" />
     </history-entry>
@@ -382,15 +283,23 @@
     <history-entry file="All_in_HW3 - 2019.05.18 at 11h 25m 24s.xml">
       <configuration name="All in HW3" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="All_in_HW3 - 2019.05.18 at 11h 40m 10s.xml">
+      <configuration name="All in HW3" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BackupTest - 2019.05.18 at 11h 40m 18s.xml">
+      <configuration name="BackupTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_HW3 - 2019.05.18 at 11h 40m 22s.xml">
+      <configuration name="All in HW3" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="54932000" />
+    <option name="totallyTimeSpent" value="56193000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-11" y="-11" width="1942" height="1046" extended-state="6" />
-    <editor active="true" />
+    <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.29567567" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.31093118" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -400,7 +309,7 @@
       <window_info id="Learn" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.25628743" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3179396" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39431617" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -410,7 +319,7 @@
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Terminal" order="10" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="12" weight="0.32814372" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.3268206" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.24939272" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -528,26 +437,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/ClassroomStoryDerivedTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-34">
-          <caret line="7" column="31" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#266#267#0" expanded="true" />
-            <element signature="e#312#313#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_212/src.zip!/java/lang/reflect/Field.java" />
-    <entry file="file://$PROJECT_DIR$/tests/Classroom.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="5" lean-forward="true" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_212/src.zip!/java/lang/Throwable.java" />
     <entry file="file://$PROJECT_DIR$/src/Provided/GivenNotFoundException.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -582,87 +472,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/backupTests/BearStoryTest.java">
+    <entry file="file://$PROJECT_DIR$/backupTests/BearStoryTest.java" />
+    <entry file="file://$PROJECT_DIR$/backupTests/Bear.java" />
+    <entry file="file://$PROJECT_DIR$/backupTests/Lion.java" />
+    <entry file="file://$PROJECT_DIR$/backupTests/SnakeStoryTest.java" />
+    <entry file="file://$PROJECT_DIR$/backupTests/Tiger.java" />
+    <entry file="file://$PROJECT_DIR$/backupTests/TigerStoryTest.java" />
+    <entry file="file://$PROJECT_DIR$/backupTests/BackupTest.java" />
+    <entry file="file://$PROJECT_DIR$/backupTests/Snake.java" />
+    <entry file="file://$PROJECT_DIR$/backupTests/LionStoryTest.java" />
+    <entry file="file://$PROJECT_DIR$/src/Solution/StoryTestExceptionImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        <state relative-caret-position="566">
+          <caret line="53" lean-forward="true" selection-start-line="53" selection-end-line="53" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backupTests/Bear.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="23" column="13" lean-forward="true" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backupTests/Lion.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backupTests/LionStoryTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="8" column="10" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backupTests/SnakeStoryTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="20" column="49" lean-forward="true" selection-start-line="20" selection-start-column="49" selection-end-line="20" selection-end-column="49" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backupTests/Tiger.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="16" column="13" lean-forward="true" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backupTests/TigerStoryTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="14" selection-start-column="14" selection-end-column="14" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backupTests/BackupTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="713">
-          <caret line="170" lean-forward="true" selection-start-line="170" selection-end-line="170" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backupTests/Snake.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Solution/Given.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
+        <state relative-caret-position="153">
           <caret line="9" column="20" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="23" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -672,7 +503,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Solution/Then.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
+        <state relative-caret-position="170">
           <caret line="10" column="19" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -682,7 +513,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Solution/When.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
+        <state relative-caret-position="170">
           <caret line="10" selection-start-line="10" selection-end-line="10" selection-end-column="19" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -690,20 +521,29 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Solution/StoryTestExceptionImpl.java">
+    <entry file="file://$PROJECT_DIR$/tests/ClassroomStoryDerivedTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="8" column="13" lean-forward="true" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        <state relative-caret-position="119">
+          <caret line="7" column="31" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#266#267#0" expanded="true" />
+            <element signature="e#312#313#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/Classroom.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="5" lean-forward="true" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Solution/StoryTesterImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="499">
-          <caret line="497" lean-forward="true" selection-start-line="497" selection-end-line="497" />
+        <state relative-caret-position="-352">
+          <caret line="39" column="7" selection-start-line="39" selection-start-column="7" selection-end-line="39" selection-end-column="7" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

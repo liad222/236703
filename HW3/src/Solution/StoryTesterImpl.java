@@ -34,6 +34,10 @@ public class StoryTesterImpl implements StoryTester {
 
     //receives a sentence and a Given annotation, checks if the sentence and the annotation match.
     //if yes, returns a list of parameters otherwise returns an empty list.
+    //the function checks if the current word is suppose to be a parameter according to the annotation's value,
+    // if yes, adds the corresponding word in the sentence to the params list,
+    // if no, checking if the word in the sentence is equal to the corresponding word in the annotation's value.
+    // if yes, moves to check the next word, if no, the annotation and the sentence doesn't match.
     @SuppressWarnings("Duplicates")
     protected ArrayList<ArrayList> compareGiven(ArrayList<String> origSentence, Given g){
        String[] words = g.value().split(" ");
@@ -63,6 +67,7 @@ public class StoryTesterImpl implements StoryTester {
 
     //receives a sentence and a When annotation, checks if the sentence and the annotation match.
     //if yes, returns a list of parameters otherwise returns an empty list.
+    //the function works similarly to the previous function.
     @SuppressWarnings("Duplicates")
     protected ArrayList<ArrayList> compareWhen(ArrayList<String> origSentence, When w){
         String[] words = w.value().split(" ");
@@ -92,7 +97,8 @@ public class StoryTesterImpl implements StoryTester {
 
     //receives a sentence and a Then annotation, checks if the sentence and the annotation match.
     //if yes, returns a list of parameters otherwise returns an empty list.
-    //In this function we deal with the word "OR" differently.
+    //the function works similarly to the previous function but in this function we deal with the word "or" differently -
+    //every time we see "or" we reset the "annotation's value counter" in order to start a "new" run of the sentence.
     protected ArrayList<ArrayList> compareThen(ArrayList<String> origSentence, Then t){
         String[] words = t.value().split(" ");
         ArrayList<ArrayList> params = new ArrayList<>();
@@ -132,8 +138,9 @@ public class StoryTesterImpl implements StoryTester {
     }
 
     //receives a sentence and a class and checks if the class has a matching annotation.
-    //If yes, returns a singelton map from the name of the right method to the matching parameters,
-    // otherwise an empty map.
+    //If yes, returns a singleton map from the right method to the matching parameters,
+    // otherwise an empty map. find the right method by iterating
+    // over the collection of methods of the class, with the same annotation as the first word of the sentence.
     @SuppressWarnings("Duplicates")
     protected HashMap<Method,ArrayList<ArrayList>> getMethod(ArrayList<String> sentence, Class<?> testClass){
         String keyword = sentence.get(0);
@@ -193,7 +200,7 @@ public class StoryTesterImpl implements StoryTester {
     }
 
     //receives a list of params and an array of classes with size equals to the number of params.
-    //checks if each param is string or int, and inserting the the type of the param to the corresponding place in the array of classes.
+    //checks if each param is string or int, and inserting the type of the param to the corresponding place in the array of classes.
     //eventually returns an array of Objects with String or Int types according to the checking above.
     protected Object[] convertParams(ArrayList<String> origins, Class[] types){
         int counter = 0;
@@ -225,7 +232,7 @@ public class StoryTesterImpl implements StoryTester {
 
     //receives an array of field to backup and the instance to backup, and returns
     //an array of Objects that contains the instance current fields value.
-    //at first, trying to clone the field. if not possible, trying to use copy constructor on the field.
+    //at first, tries to clone the field. if exception is thrown, tries to use copy constructor on the field.
     //if the field doesn't have a copy constructor, the value itself will be add to the returned array (a reference)
     protected Object[] doBackup(Field[] origin, Object inst) throws IllegalAccessException {
         Object[] backup = new Object[origin.length];
