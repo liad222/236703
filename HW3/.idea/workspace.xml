@@ -1,7 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="858dcfa1-44ea-4558-a5ad-2cd2695e62a5" name="Default Changelist" comment="" />
+    <list default="true" id="858dcfa1-44ea-4558-a5ad-2cd2695e62a5" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/HW3/Solution/StoryTesterImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HW3/Solution/StoryTesterImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/HW3/backupTests/BackupTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/HW3/backupTests/Bear.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/HW3/backupTests/BearStoryTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/HW3/backupTests/Lion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/HW3/backupTests/LionStoryTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/HW3/backupTests/Snake.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/HW3/backupTests/SnakeStoryTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/HW3/backupTests/Tiger.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/HW3/backupTests/TigerStoryTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Solution/StoryTesterImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Solution/StoryTesterImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/backupTests/BackupTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/backupTests/Bear.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/backupTests/BearStoryTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/backupTests/Lion.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/backupTests/LionStoryTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/backupTests/Snake.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/backupTests/SnakeStoryTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/backupTests/Tiger.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/backupTests/TigerStoryTest.java" beforeDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,14 +36,83 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Solution/StoryTesterImpl.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/backupTests/Dragon.java">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/backupTests/DragonStoryDerivedTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-352">
-              <caret line="39" column="7" selection-start-line="39" selection-start-column="7" selection-end-line="39" selection-end-column="7" />
+            <state relative-caret-position="100">
+              <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/backupTests/DragonStoryTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="50">
+              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/backupTests/BackupTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/backupTests/Bear.java">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/backupTests/BearStoryTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/backupTests/LionStoryTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="3" selection-start-line="3" selection-end-line="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/backupTests/SnakeStoryTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="3" selection-start-line="3" selection-end-line="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/backupTests/Tiger.java">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/backupTests/TigerStoryTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
             </state>
           </provider>
         </entry>
@@ -49,6 +140,7 @@
       <find>doB</find>
       <find>doBa</find>
       <find>givenno</find>
+      <find>warnin</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -68,16 +160,16 @@
         <option value="$PROJECT_DIR$/tests/DogStoryDerivedTest.java" />
         <option value="$PROJECT_DIR$/tests/Classroom.java" />
         <option value="$PROJECT_DIR$/tests/ClassroomTest.java" />
+        <option value="$PROJECT_DIR$/src/Solution/StoryTesterImpl.java" />
         <option value="$PROJECT_DIR$/backupTests/BackupTest.java" />
         <option value="$PROJECT_DIR$/backupTests/BearStoryTest.java" />
         <option value="$PROJECT_DIR$/backupTests/LionStoryTest.java" />
         <option value="$PROJECT_DIR$/backupTests/SnakeStoryTest.java" />
         <option value="$PROJECT_DIR$/backupTests/TigerStoryTest.java" />
-        <option value="$PROJECT_DIR$/src/Solution/StoryTesterImpl.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="width" value="960" />
     <option name="height" value="1026" />
   </component>
@@ -87,6 +179,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -95,27 +188,10 @@
               <item name="HW3" type="b2602c69:ProjectViewProjectNode" />
               <item name="HW3" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="HW3" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HW3" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="HW3" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HW3" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Solution" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="HW3" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HW3" type="462c0819:PsiDirectoryNode" />
-              <item name="tests" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -258,16 +334,11 @@
       <workItem from="1558168735054" duration="92000" />
       <workItem from="1558171338175" duration="9000" />
       <workItem from="1558172181358" duration="1160000" />
+      <workItem from="1558345065696" duration="1179000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="All_in_HW3 - 2019.05.17 at 20h 41m 01s.xml">
-      <configuration name="All in HW3" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_in_HW3 - 2019.05.17 at 20h 41m 16s.xml">
-      <configuration name="All in HW3" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="All_in_HW3 - 2019.05.17 at 20h 45m 39s.xml">
       <configuration name="All in HW3" configurationId="JUnit" />
     </history-entry>
@@ -292,14 +363,20 @@
     <history-entry file="All_in_HW3 - 2019.05.18 at 11h 40m 22s.xml">
       <configuration name="All in HW3" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="All_in_HW3 - 2019.05.20 at 12h 48m 12s.xml">
+      <configuration name="All in HW3" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_HW3 - 2019.05.20 at 12h 52m 47s.xml">
+      <configuration name="All in HW3" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="56193000" />
+    <option name="totallyTimeSpent" value="57372000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
+    <frame x="-11" y="-11" width="1942" height="1046" extended-state="7" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.31093118" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.31675676" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -309,7 +386,7 @@
       <window_info id="Learn" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3179396" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.43592814" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39431617" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -319,7 +396,7 @@
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Terminal" order="10" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="12" weight="0.3268206" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.3257485" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.24939272" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -339,15 +416,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Provided/StoryTestException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_212/src.zip!/java/util/List.java" />
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_212/src.zip!/java/util/Collection.java" />
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_212/src.zip!/java/lang/Class.java" />
     <entry file="file://$PROJECT_DIR$/src/Provided/StoryTester.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -472,15 +540,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/backupTests/BearStoryTest.java" />
-    <entry file="file://$PROJECT_DIR$/backupTests/Bear.java" />
-    <entry file="file://$PROJECT_DIR$/backupTests/Lion.java" />
-    <entry file="file://$PROJECT_DIR$/backupTests/SnakeStoryTest.java" />
-    <entry file="file://$PROJECT_DIR$/backupTests/Tiger.java" />
-    <entry file="file://$PROJECT_DIR$/backupTests/TigerStoryTest.java" />
-    <entry file="file://$PROJECT_DIR$/backupTests/BackupTest.java" />
-    <entry file="file://$PROJECT_DIR$/backupTests/Snake.java" />
-    <entry file="file://$PROJECT_DIR$/backupTests/LionStoryTest.java" />
     <entry file="file://$PROJECT_DIR$/src/Solution/StoryTestExceptionImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="566">
@@ -542,11 +601,77 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Solution/StoryTesterImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-352">
-          <caret line="39" column="7" selection-start-line="39" selection-start-column="7" selection-end-line="39" selection-end-column="7" />
+        <state>
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backupTests/Lion.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backupTests/Snake.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backupTests/Tiger.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backupTests/Dragon.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backupTests/DragonStoryDerivedTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backupTests/DragonStoryTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backupTests/BackupTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backupTests/Bear.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backupTests/BearStoryTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backupTests/LionStoryTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backupTests/SnakeStoryTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backupTests/TigerStoryTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
         </state>
       </provider>
     </entry>

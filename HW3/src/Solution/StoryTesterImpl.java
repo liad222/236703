@@ -38,7 +38,6 @@ public class StoryTesterImpl implements StoryTester {
     // if yes, adds the corresponding word in the sentence to the params list,
     // if no, checking if the word in the sentence is equal to the corresponding word in the annotation's value.
     // if yes, moves to check the next word, if no, the annotation and the sentence doesn't match.
-    @SuppressWarnings("Duplicates")
     protected ArrayList<ArrayList> compareGiven(ArrayList<String> origSentence, Given g){
        String[] words = g.value().split(" ");
        ArrayList<ArrayList> params = new ArrayList<>();
@@ -68,7 +67,6 @@ public class StoryTesterImpl implements StoryTester {
     //receives a sentence and a When annotation, checks if the sentence and the annotation match.
     //if yes, returns a list of parameters otherwise returns an empty list.
     //the function works similarly to the previous function.
-    @SuppressWarnings("Duplicates")
     protected ArrayList<ArrayList> compareWhen(ArrayList<String> origSentence, When w){
         String[] words = w.value().split(" ");
         ArrayList<ArrayList> params = new ArrayList<>();
@@ -141,7 +139,6 @@ public class StoryTesterImpl implements StoryTester {
     //If yes, returns a singleton map from the right method to the matching parameters,
     // otherwise an empty map. find the right method by iterating
     // over the collection of methods of the class, with the same annotation as the first word of the sentence.
-    @SuppressWarnings("Duplicates")
     protected HashMap<Method,ArrayList<ArrayList>> getMethod(ArrayList<String> sentence, Class<?> testClass){
         String keyword = sentence.get(0);
         Method[] methods = testClass.getDeclaredMethods();

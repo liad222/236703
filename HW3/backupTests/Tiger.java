@@ -1,5 +1,3 @@
-package backupTests;
-
 public class Tiger {
 	private int age;
 	private int exhaustion;

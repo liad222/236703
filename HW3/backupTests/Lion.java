@@ -1,17 +1,10 @@
-package backupTests;
-
-public class Snake implements Cloneable {
+public class Lion implements Cloneable {
 	private int age;
 	private int exhaustion;
 
-	public Snake(int age) {
+	public Lion(int age) {
 		this.age = age;
 		this.exhaustion = 0;
-	}
-
-	public Snake(Snake s) {
-		this.age = s.age;
-		this.exhaustion = 50;
 	}
 
 	public Object clone() throws

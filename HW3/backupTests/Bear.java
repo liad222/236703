@@ -1,18 +1,10 @@
-package backupTests;
-
-public class Lion implements Cloneable {
+public class Bear {
 	private int age;
 	private int exhaustion;
 
-	public Lion(int age) {
+	public Bear(int age) {
 		this.age = age;
 		this.exhaustion = 0;
-	}
-
-	public Object clone() throws
-			CloneNotSupportedException
-	{
-		return super.clone();
 	}
 
 	public void hunt(int hours) {

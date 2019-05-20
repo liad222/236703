@@ -1,5 +1,3 @@
-package backupTests;
-
 import Solution.Given;
 import Solution.Then;
 import Solution.When;
