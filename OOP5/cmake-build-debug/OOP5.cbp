@@ -82,7 +82,25 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="C:/Users/Liad/CLionProjects/OOP5/Provided/part2/BoardCell.h">
+			<Option target="OOP5"/>
+		</Unit>
+		<Unit filename="C:/Users/Liad/CLionProjects/OOP5/Provided/part2/CellType.h">
+			<Option target="OOP5"/>
+		</Unit>
+		<Unit filename="C:/Users/Liad/CLionProjects/OOP5/Provided/part2/Direction.h">
+			<Option target="OOP5"/>
+		</Unit>
+		<Unit filename="C:/Users/Liad/CLionProjects/OOP5/Provided/part2/GameBoard.h">
+			<Option target="OOP5"/>
+		</Unit>
 		<Unit filename="C:/Users/Liad/CLionProjects/OOP5/Provided/part2/List.h">
+			<Option target="OOP5"/>
+		</Unit>
+		<Unit filename="C:/Users/Liad/CLionProjects/OOP5/Provided/part2/MoveVehicle.h">
+			<Option target="OOP5"/>
+		</Unit>
+		<Unit filename="C:/Users/Liad/CLionProjects/OOP5/Provided/part2/Utilities.h">
 			<Option target="OOP5"/>
 		</Unit>
 		<Unit filename="C:/Users/Liad/CLionProjects/OOP5/Provided/part2/test.cpp">

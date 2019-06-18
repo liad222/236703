@@ -6,11 +6,27 @@
 
 #IncludeRegexTransform: 
 
+C:/Users/Liad/CLionProjects/OOP5/Provided/part2/CellType.h
+
+C:/Users/Liad/CLionProjects/OOP5/Provided/part2/Direction.h
+
 C:/Users/Liad/CLionProjects/OOP5/Provided/part2/List.h
+
+C:/Users/Liad/CLionProjects/OOP5/Provided/part2/MoveVehicle.h
+CellType.h
+C:/Users/Liad/CLionProjects/OOP5/Provided/part2/CellType.h
+Direction.h
+C:/Users/Liad/CLionProjects/OOP5/Provided/part2/Direction.h
+
+C:/Users/Liad/CLionProjects/OOP5/Provided/part2/Utilities.h
 
 C:/Users/Liad/CLionProjects/OOP5/Provided/part2/test.cpp
 List.h
 C:/Users/Liad/CLionProjects/OOP5/Provided/part2/List.h
+Utilities.h
+C:/Users/Liad/CLionProjects/OOP5/Provided/part2/Utilities.h
 iostream
 -
+MoveVehicle.h
+C:/Users/Liad/CLionProjects/OOP5/Provided/part2/MoveVehicle.h
 
