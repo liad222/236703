@@ -24,7 +24,7 @@
     <session id="-1690424266">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="3" />
+          <entry key="project.closed" value="4" />
           <entry key="project.open.time.3" value="1" />
           <entry key="project.open.time.4" value="1" />
           <entry key="project.open.time.5" value="1" />
@@ -34,28 +34,28 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="cpp" value="752" />
-          <entry key="h" value="3623" />
-          <entry key="txt" value="13" />
+          <entry key="cpp" value="1233" />
+          <entry key="h" value="5712" />
+          <entry key="txt" value="21" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="CMakeLists.txt" value="13" />
-          <entry key="ObjectiveC" value="4375" />
+          <entry key="CMakeLists.txt" value="21" />
+          <entry key="ObjectiveC" value="6945" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="cpp" value="5" />
-          <entry key="h" value="31" />
-          <entry key="txt" value="6" />
+          <entry key="cpp" value="7" />
+          <entry key="h" value="33" />
+          <entry key="txt" value="11" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CMakeLists.txt" value="6" />
-          <entry key="ObjectiveC" value="36" />
+          <entry key="CMakeLists.txt" value="11" />
+          <entry key="ObjectiveC" value="40" />
         </counts>
       </usages-collector>
     </session>
@@ -65,10 +65,25 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Provided/part2/test.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-13">
-              <caret line="36" column="16" selection-start-line="36" selection-start-column="16" selection-end-line="36" selection-end-column="16" />
+            <state relative-caret-position="296">
+              <caret line="92" column="37" selection-start-line="92" selection-start-column="37" selection-end-line="92" selection-end-column="37" />
               <folding>
                 <element signature="e#40#57#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Provided/part2/lev_test.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="213">
+              <caret line="357" column="43" selection-start-line="357" selection-start-column="43" selection-end-line="357" selection-end-column="43" />
+              <folding>
+                <element signature="e#0#19#0" expanded="true" />
+                <element signature="e#87#104#0" expanded="true" />
+                <element signature="e#16223#18911#0" expanded="true" />
+                <element signature="e#28816#28866#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -77,18 +92,36 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Provided/part2/MoveVehicle.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="92">
-              <caret line="47" column="61" selection-start-line="47" selection-start-column="61" selection-end-line="47" selection-end-column="61" />
+            <state relative-caret-position="187">
+              <caret line="146" column="96" lean-forward="true" selection-start-line="146" selection-start-column="96" selection-end-line="146" selection-end-column="96" />
               <folding>
                 <element signature="e#96#117#0" expanded="true" />
                 <element signature="e#174#207#0" expanded="true" />
-                <element signature="e#238#303#0" expanded="true" />
-                <element signature="e#347#405#0" expanded="true" />
+                <element signature="e#238#318#0" expanded="true" />
+                <element signature="e#921#995#0" expanded="true" />
                 <element signature="e#150#192#0" expanded="true" />
                 <element signature="e#407#441#0" expanded="true" />
-                <element signature="e#473#523#0" expanded="true" />
-                <element signature="e#734#777#0" expanded="true" />
+                <element signature="e#1542#1639#0" expanded="true" />
+                <element signature="e#3044#3133#0" expanded="true" />
+                <element signature="e#4175#4205#0" expanded="true" />
+                <element signature="e#4234#4325#0" expanded="true" />
+                <element signature="e#4616#4655#0" expanded="true" />
+                <element signature="e#4685#4772#0" expanded="true" />
+                <element signature="e#5761#5848#0" expanded="true" />
+                <element signature="e#4617#4663#0" expanded="true" />
+                <element signature="e#4696#4791#0" expanded="true" />
+                <element signature="e#7720#7814#0" expanded="true" />
+                <element signature="e#5400#5500#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Provided/part2/Direction.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="7" column="52" selection-start-line="7" selection-start-column="52" selection-end-line="7" selection-end-column="52" />
             </state>
           </provider>
         </entry>
@@ -96,8 +129,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Provided/part2/List.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="39" column="27" lean-forward="true" selection-start-line="39" selection-start-column="27" selection-end-line="39" selection-end-column="27" />
+            <state relative-caret-position="204">
+              <caret line="63" column="15" selection-start-line="63" selection-start-column="15" selection-end-line="63" selection-end-column="15" />
               <folding>
                 <element signature="e#91#107#0" expanded="true" />
                 <element signature="e#133#161#0" expanded="true" />
@@ -128,7 +161,7 @@
         <entry file="file://$PROJECT_DIR$/Provided/part2/CellType.h">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="85">
-              <caret line="5" column="23" lean-forward="true" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
+              <caret line="5" column="23" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -136,10 +169,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Provided/part2/BoardCell.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="49" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="49" />
+            <state relative-caret-position="221">
+              <caret line="13" column="21" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
               <folding>
                 <element signature="e#92#114#0" expanded="true" />
+                <element signature="e#146#188#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -148,12 +182,12 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Provided/part2/GameBoard.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="28" selection-start-line="14" selection-start-column="27" selection-end-line="14" selection-end-column="28" />
+            <state relative-caret-position="221">
+              <caret line="16" column="47" selection-start-line="16" selection-start-column="47" selection-end-line="16" selection-end-column="47" />
               <folding>
                 <element signature="e#92#114#0" expanded="true" />
                 <element signature="e#142#158#0" expanded="true" />
-                <element signature="e#188#216#0" expanded="true" />
+                <element signature="e#188#220#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -161,20 +195,29 @@
       </file>
     </leaf>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>width</find>
+      <find>length</find>
+      <find>type</find>
+      <find>printer</find>
+    </findStrings>
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Provided/part2/List.cpp" />
         <option value="$PROJECT_DIR$/test.cpp" />
-        <option value="$PROJECT_DIR$/Provided/part2/Printer.h" />
-        <option value="$PROJECT_DIR$/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/Provided/part2/Utilities.h" />
         <option value="$PROJECT_DIR$/Provided/part2/CellType.h" />
         <option value="$PROJECT_DIR$/Provided/part2/Direction.h" />
         <option value="$PROJECT_DIR$/Provided/part2/BoardCell.h" />
-        <option value="$PROJECT_DIR$/Provided/part2/test.cpp" />
-        <option value="$PROJECT_DIR$/Provided/part2/List.h" />
         <option value="$PROJECT_DIR$/Provided/part2/GameBoard.h" />
+        <option value="$PROJECT_DIR$/Provided/part2/Printer.h" />
+        <option value="$PROJECT_DIR$/Provided/part2/List.h" />
+        <option value="$PROJECT_DIR$/Provided/part2/lev_test.cpp" />
+        <option value="$PROJECT_DIR$/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/Provided/part2/test.cpp" />
         <option value="$PROJECT_DIR$/Provided/part2/MoveVehicle.h" />
       </list>
     </option>
@@ -185,7 +228,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-12" />
     <option name="width" value="981" />
     <option name="height" value="1032" />
@@ -271,18 +314,17 @@
       <workItem from="1560848688725" duration="4000" />
       <workItem from="1560848727226" duration="5212000" />
       <workItem from="1560855866186" duration="6608000" />
-      <workItem from="1561104641053" duration="5186000" />
+      <workItem from="1561104641053" duration="19795000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17010000" />
+    <option name="totallyTimeSpent" value="31619000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26153848" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26153848" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -314,57 +356,9 @@
     <entry file="file://$PROJECT_DIR$/main.cpp" />
     <entry file="file://$PROJECT_DIR$/Provided/part2/List.cpp" />
     <entry file="file://$PROJECT_DIR$/test.cpp" />
-    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="36" selection-start-line="5" selection-start-column="36" selection-end-line="5" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Provided/part2/Printer.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="37" column="2" selection-start-line="12" selection-end-line="37" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Provided/part2/Direction.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="52" selection-start-line="7" selection-start-column="52" selection-end-line="7" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Provided/part2/TransposeList.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-562" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Provided/part2/CellType.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="23" lean-forward="true" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Provided/part2/BoardCell.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="49" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="49" />
-          <folding>
-            <element signature="e#92#114#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Provided/part2/test.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-13">
-          <caret line="36" column="16" selection-start-line="36" selection-start-column="16" selection-end-line="36" selection-end-column="16" />
-          <folding>
-            <element signature="e#40#57#0" expanded="true" />
-          </folding>
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Provided/part2/Utilities.h">
@@ -378,22 +372,65 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Provided/part2/Printer.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="21" lean-forward="true" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
+          <folding>
+            <element signature="e#332#342#0" expanded="true" />
+            <element signature="e#368#383#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="58" selection-start-line="5" selection-start-column="58" selection-end-line="5" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Provided/part2/GameBoard.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="28" selection-start-line="14" selection-start-column="27" selection-end-line="14" selection-end-column="28" />
+        <state relative-caret-position="221">
+          <caret line="16" column="47" selection-start-line="16" selection-start-column="47" selection-end-line="16" selection-end-column="47" />
           <folding>
             <element signature="e#92#114#0" expanded="true" />
             <element signature="e#142#158#0" expanded="true" />
-            <element signature="e#188#216#0" expanded="true" />
+            <element signature="e#188#220#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Provided/part2/CellType.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="23" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Provided/part2/Direction.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="52" selection-start-line="7" selection-start-column="52" selection-end-line="7" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Provided/part2/BoardCell.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="21" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
+          <folding>
+            <element signature="e#92#114#0" expanded="true" />
+            <element signature="e#146#188#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Provided/part2/List.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="39" column="27" lean-forward="true" selection-start-line="39" selection-start-column="27" selection-end-line="39" selection-end-column="27" />
+        <state relative-caret-position="204">
+          <caret line="63" column="15" selection-start-line="63" selection-start-column="15" selection-end-line="63" selection-end-column="15" />
           <folding>
             <element signature="e#91#107#0" expanded="true" />
             <element signature="e#133#161#0" expanded="true" />
@@ -406,19 +443,51 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Provided/part2/lev_test.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="213">
+          <caret line="357" column="43" selection-start-line="357" selection-start-column="43" selection-end-line="357" selection-end-column="43" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+            <element signature="e#87#104#0" expanded="true" />
+            <element signature="e#16223#18911#0" expanded="true" />
+            <element signature="e#28816#28866#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Provided/part2/test.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="296">
+          <caret line="92" column="37" selection-start-line="92" selection-start-column="37" selection-end-line="92" selection-end-column="37" />
+          <folding>
+            <element signature="e#40#57#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Provided/part2/MoveVehicle.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="47" column="61" selection-start-line="47" selection-start-column="61" selection-end-line="47" selection-end-column="61" />
+        <state relative-caret-position="187">
+          <caret line="146" column="96" lean-forward="true" selection-start-line="146" selection-start-column="96" selection-end-line="146" selection-end-column="96" />
           <folding>
             <element signature="e#96#117#0" expanded="true" />
             <element signature="e#174#207#0" expanded="true" />
-            <element signature="e#238#303#0" expanded="true" />
-            <element signature="e#347#405#0" expanded="true" />
+            <element signature="e#238#318#0" expanded="true" />
+            <element signature="e#921#995#0" expanded="true" />
             <element signature="e#150#192#0" expanded="true" />
             <element signature="e#407#441#0" expanded="true" />
-            <element signature="e#473#523#0" expanded="true" />
-            <element signature="e#734#777#0" expanded="true" />
+            <element signature="e#1542#1639#0" expanded="true" />
+            <element signature="e#3044#3133#0" expanded="true" />
+            <element signature="e#4175#4205#0" expanded="true" />
+            <element signature="e#4234#4325#0" expanded="true" />
+            <element signature="e#4616#4655#0" expanded="true" />
+            <element signature="e#4685#4772#0" expanded="true" />
+            <element signature="e#5761#5848#0" expanded="true" />
+            <element signature="e#4617#4663#0" expanded="true" />
+            <element signature="e#4696#4791#0" expanded="true" />
+            <element signature="e#7720#7814#0" expanded="true" />
+            <element signature="e#5400#5500#0" expanded="true" />
           </folding>
         </state>
       </provider>

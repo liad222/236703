@@ -6,17 +6,33 @@
 
 #IncludeRegexTransform: 
 
+C:/Users/Liad/CLionProjects/OOP5/Provided/part2/BoardCell.h
+Direction.h
+C:/Users/Liad/CLionProjects/OOP5/Provided/part2/Direction.h
+CellType.h
+C:/Users/Liad/CLionProjects/OOP5/Provided/part2/CellType.h
+
 C:/Users/Liad/CLionProjects/OOP5/Provided/part2/CellType.h
 
 C:/Users/Liad/CLionProjects/OOP5/Provided/part2/Direction.h
 
+C:/Users/Liad/CLionProjects/OOP5/Provided/part2/GameBoard.h
+BoardCell.h
+C:/Users/Liad/CLionProjects/OOP5/Provided/part2/BoardCell.h
+List.h
 C:/Users/Liad/CLionProjects/OOP5/Provided/part2/List.h
+
+C:/Users/Liad/CLionProjects/OOP5/Provided/part2/List.h
+Utilities.h
+C:/Users/Liad/CLionProjects/OOP5/Provided/part2/Utilities.h
 
 C:/Users/Liad/CLionProjects/OOP5/Provided/part2/MoveVehicle.h
 CellType.h
 C:/Users/Liad/CLionProjects/OOP5/Provided/part2/CellType.h
 Direction.h
 C:/Users/Liad/CLionProjects/OOP5/Provided/part2/Direction.h
+GameBoard.h
+C:/Users/Liad/CLionProjects/OOP5/Provided/part2/GameBoard.h
 
 C:/Users/Liad/CLionProjects/OOP5/Provided/part2/Utilities.h
 

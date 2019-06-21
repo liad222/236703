@@ -10,8 +10,8 @@
 
 template<CellType Type, Direction Dir, int Length>
 struct BoardCell{
-    CellType type = Type;
-    Direction direction = Dir;
+    constexpr static CellType type = Type;
+    constexpr static Direction direction = Dir;
     constexpr static int length = Length;
 };
 

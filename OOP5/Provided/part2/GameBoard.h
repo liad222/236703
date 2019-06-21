@@ -11,10 +11,10 @@
 template<typename... TT>
 struct GameBoard{};
 
-template<typename T, typename... TT>
-struct GameBoard<List<List<T>, TT...>>{
-    typedef List<List<T>, TT...> board;
-    constexpr static int width = List<T>::size;
+template<typename... UU, typename... TT>
+struct GameBoard<List<List<UU...>, TT...>>{
+    typedef List<List<UU...>, TT...> board;
+    constexpr static int width = List<UU...>::size;
     constexpr static int length = sizeof...(TT)+1;
 
 };
