@@ -97,7 +97,8 @@ struct MoveByOne<GameBoard<List<List<BoardCell<Type, Dir, Length>,UU...>, TT...>
     typedef typename GetAtIndex<R, typename b::board>::value current_row;
     typedef typename SetAtIndex<new_col, cell, current_row>::list temp_row;
     typedef typename SetAtIndex<C, BoardCell<EMPTY, UP, 3>, temp_row>::list new_row;
-    typedef typename SetAtIndex<R, new_row, typename b::board>::list new_board;
+    typedef typename SetAtIndex<R, new_row, typename b::board>::list new_board_list;
+    typedef GameBoard<new_board_list> new_board;
 };
 
 template<typename... UU, typename... TT,CellType Type, Direction Dir, int Length, int R, int C>
@@ -115,7 +116,8 @@ struct MoveByOne<GameBoard<List<List<BoardCell<Type, Dir, Length>,UU...>, TT...>
     typedef typename GetAtIndex<R, typename b::board>::value current_row;
     typedef typename SetAtIndex<new_col, cell, current_row>::list temp_row;
     typedef typename SetAtIndex<last_col, BoardCell<EMPTY, UP, 3>, temp_row>::list new_row;
-    typedef typename SetAtIndex<R, new_row, typename b::board>::list new_board;
+    typedef typename SetAtIndex<R, new_row, typename b::board>::list new_board_list;
+    typedef GameBoard<new_board_list> new_board;
 };
 
 
@@ -148,8 +150,13 @@ struct MoveVehicle<GameBoard<List<List<BoardCell<Type, Dir, Length>,UU...>, TT..
     typedef typename MoveVehicle<typename MoveByOne<b, R, C, LEFT>::new_board, R, C-1, LEFT, A-1>::board board;
 };
 
-template<typename... UU, typename... TT,CellType Type, Direction Dir, int Length, int R, int C, Direction D>
-struct MoveVehicle<GameBoard<List<List<BoardCell<Type, Dir, Length>,UU...>, TT...>>, R, C, D, 0>{
+template<typename... UU, typename... TT,CellType Type, Direction Dir, int Length, int R, int C>
+struct MoveVehicle<GameBoard<List<List<BoardCell<Type, Dir, Length>,UU...>, TT...>>, R, C, RIGHT, 0>{
+    typedef GameBoard<List<List<BoardCell<Type, Dir, Length>,UU...>, TT...>> board;
+};
+
+template<typename... UU, typename... TT,CellType Type, Direction Dir, int Length, int R, int C>
+struct MoveVehicle<GameBoard<List<List<BoardCell<Type, Dir, Length>,UU...>, TT...>>, R, C, LEFT, 0>{
     typedef GameBoard<List<List<BoardCell<Type, Dir, Length>,UU...>, TT...>> board;
 };
 

@@ -216,27 +216,27 @@ static void checkWin_noWin_board_1x6_Test() {
 	> > gameBoard;
 	static_assert(not CheckWin<gameBoard>::result, "Fail");
 }
-
-static void moveVehicle_game_Test() {
-	typedef GameBoard< List<
-	        List < BoardCell<EMPTY, RIGHT, 1>, BoardCell<EMPTY, RIGHT, 1>, BoardCell<EMPTY, RIGHT , 0>, BoardCell<R ,    UP,     3>, BoardCell< EMPTY , RIGHT , 0>,  BoardCell< EMPTY, RIGHT , 0>>,
-	        List < BoardCell<EMPTY, LEFT , 2>, BoardCell<EMPTY, LEFT , 2>, BoardCell<EMPTY, RIGHT , 0>, BoardCell<R ,    UP,     3>, BoardCell< EMPTY , RIGHT , 0>,  BoardCell< EMPTY, RIGHT , 0>>,
-	        List < BoardCell<EMPTY, RIGHT, 0>, BoardCell<X,     RIGHT, 2>, BoardCell<X ,    RIGHT,  2>, BoardCell<R,     UP,     3>, BoardCell< EMPTY , RIGHT , 0>,  BoardCell< P ,    UP,     3>>,
-	        List < BoardCell<EMPTY, RIGHT, 0>, BoardCell<C,     DOWN , 2>, BoardCell<D ,    LEFT  , 2>, BoardCell<D ,    LEFT  , 2>, BoardCell< EMPTY , RIGHT , 0>,  BoardCell< P,     UP ,    3>>,
-	        List < BoardCell<EMPTY, RIGHT, 0>, BoardCell<C,     DOWN , 2>, BoardCell<EMPTY, RIGHT , 0>, BoardCell<EMPTY, RIGHT , 0>, BoardCell< EMPTY , RIGHT , 0>,  BoardCell< P ,    UP ,    3>>,
-	        List < BoardCell<EMPTY, RIGHT, 0>, BoardCell<EMPTY, RIGHT, 0>, BoardCell<EMPTY, UP    , 2>, BoardCell<EMPTY, RIGHT , 0>, BoardCell< F ,     RIGHT , 2>,  BoardCell< F,     RIGHT , 2>>
-	> > gameBoard;
-
-    static_assert(not CheckWin<gameBoard>::result, "Fail");
-
-    std::cout << "Running: " << __FUNCTION__ << std::endl;
-    Printer<gameBoard>::print(std::cout);*/
-    /*
-     * Every move here is valid and leads to win. Everything must compile.
-     * But it's impossible to test board state (since it's OK to change EMPTY cells, as I understand)
-     * So, here you have to rely on printer.
-     */
-
+*/
+//static void moveVehicle_game_Test() {
+//	typedef GameBoard< List<
+//	        List < BoardCell<EMPTY, RIGHT, 1>, BoardCell<EMPTY, RIGHT, 1>, BoardCell<EMPTY, RIGHT , 0>, BoardCell<R ,    UP,     3>, BoardCell< EMPTY , RIGHT , 0>,  BoardCell< EMPTY, RIGHT , 0>>,
+//	        List < BoardCell<EMPTY, LEFT , 2>, BoardCell<EMPTY, LEFT , 2>, BoardCell<EMPTY, RIGHT , 0>, BoardCell<R ,    UP,     3>, BoardCell< EMPTY , RIGHT , 0>,  BoardCell< EMPTY, RIGHT , 0>>,
+//	        List < BoardCell<EMPTY, RIGHT, 0>, BoardCell<X,     RIGHT, 2>, BoardCell<X ,    RIGHT,  2>, BoardCell<R,     UP,     3>, BoardCell< EMPTY , RIGHT , 0>,  BoardCell< P ,    UP,     3>>,
+//	        List < BoardCell<EMPTY, RIGHT, 0>, BoardCell<C,     DOWN , 2>, BoardCell<D ,    LEFT  , 2>, BoardCell<D ,    LEFT  , 2>, BoardCell< EMPTY , RIGHT , 0>,  BoardCell< P,     UP ,    3>>,
+//	        List < BoardCell<EMPTY, RIGHT, 0>, BoardCell<C,     DOWN , 2>, BoardCell<EMPTY, RIGHT , 0>, BoardCell<EMPTY, RIGHT , 0>, BoardCell< EMPTY , RIGHT , 0>,  BoardCell< P ,    UP ,    3>>,
+//	        List < BoardCell<EMPTY, RIGHT, 0>, BoardCell<EMPTY, RIGHT, 0>, BoardCell<EMPTY, UP    , 2>, BoardCell<EMPTY, RIGHT , 0>, BoardCell< F ,     RIGHT , 2>,  BoardCell< F,     RIGHT , 2>>
+//	> > gameBoard;
+//
+//    static_assert(not CheckWin<gameBoard>::result, "Fail");
+//
+//    std::cout << "Running: " << __FUNCTION__ << std::endl;
+//    Printer<gameBoard>::print(std::cout);*/
+//    /*
+//     * Every move here is valid and leads to win. Everything must compile.
+//     * But it's impossible to test board state (since it's OK to change EMPTY cells, as I understand)
+//     * So, here you have to rely on printer.
+//     */
+//
 //    typedef MoveVehicle<gameBoard, 4, 1, DOWN,  1>::board b01; /* C */   Printer<b01>::print(std::cout);
 //	typedef MoveVehicle<b01,       3, 5, UP,    2>::board b02; /* P */   Printer<b02>::print(std::cout);
 //	typedef MoveVehicle<b02,       3, 2, RIGHT, 2>::board b03; /* D */   Printer<b03>::print(std::cout);
