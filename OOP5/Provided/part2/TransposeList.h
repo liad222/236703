@@ -1,8 +1,7 @@
 #ifndef PART2_TRANSPOSELIST_H
 #define PART2_TRANSPOSELIST_H
 
-#include "RushHour.h"
-
+#include "List.h"
 template<typename TList>
 struct AsVerticalList{
     typedef typename PrependList<List<typename TList::head>, typename AsVerticalList<typename TList::next>::list>::list list;

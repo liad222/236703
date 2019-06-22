@@ -122,32 +122,32 @@ OOP5/fast:
 	$(MAKE) -f CMakeFiles\OOP5.dir\build.make CMakeFiles/OOP5.dir/build
 .PHONY : OOP5/fast
 
-Provided/part2/test.obj: Provided/part2/test.cpp.obj
+Provided/part2/lev_test.obj: Provided/part2/lev_test.cpp.obj
 
-.PHONY : Provided/part2/test.obj
+.PHONY : Provided/part2/lev_test.obj
 
 # target to build an object file
-Provided/part2/test.cpp.obj:
-	$(MAKE) -f CMakeFiles\OOP5.dir\build.make CMakeFiles/OOP5.dir/Provided/part2/test.cpp.obj
-.PHONY : Provided/part2/test.cpp.obj
+Provided/part2/lev_test.cpp.obj:
+	$(MAKE) -f CMakeFiles\OOP5.dir\build.make CMakeFiles/OOP5.dir/Provided/part2/lev_test.cpp.obj
+.PHONY : Provided/part2/lev_test.cpp.obj
 
-Provided/part2/test.i: Provided/part2/test.cpp.i
+Provided/part2/lev_test.i: Provided/part2/lev_test.cpp.i
 
-.PHONY : Provided/part2/test.i
+.PHONY : Provided/part2/lev_test.i
 
 # target to preprocess a source file
-Provided/part2/test.cpp.i:
-	$(MAKE) -f CMakeFiles\OOP5.dir\build.make CMakeFiles/OOP5.dir/Provided/part2/test.cpp.i
-.PHONY : Provided/part2/test.cpp.i
+Provided/part2/lev_test.cpp.i:
+	$(MAKE) -f CMakeFiles\OOP5.dir\build.make CMakeFiles/OOP5.dir/Provided/part2/lev_test.cpp.i
+.PHONY : Provided/part2/lev_test.cpp.i
 
-Provided/part2/test.s: Provided/part2/test.cpp.s
+Provided/part2/lev_test.s: Provided/part2/lev_test.cpp.s
 
-.PHONY : Provided/part2/test.s
+.PHONY : Provided/part2/lev_test.s
 
 # target to generate assembly for a file
-Provided/part2/test.cpp.s:
-	$(MAKE) -f CMakeFiles\OOP5.dir\build.make CMakeFiles/OOP5.dir/Provided/part2/test.cpp.s
-.PHONY : Provided/part2/test.cpp.s
+Provided/part2/lev_test.cpp.s:
+	$(MAKE) -f CMakeFiles\OOP5.dir\build.make CMakeFiles/OOP5.dir/Provided/part2/lev_test.cpp.s
+.PHONY : Provided/part2/lev_test.cpp.s
 
 # Help Target
 help:
@@ -158,9 +158,9 @@ help:
 	@echo ... OOP5
 	@echo ... edit_cache
 	@echo ... rebuild_cache
-	@echo ... Provided/part2/test.obj
-	@echo ... Provided/part2/test.i
-	@echo ... Provided/part2/test.s
+	@echo ... Provided/part2/lev_test.obj
+	@echo ... Provided/part2/lev_test.i
+	@echo ... Provided/part2/lev_test.s
 .PHONY : help
 
 

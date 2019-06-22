@@ -95,24 +95,21 @@ int main(){
     std::cout << type << std::endl << dir << std::endl<< len << std::endl;
 
     std::cout << " MoveVehicle-----------------------------------------------------"<< std::endl;
-    constexpr int Irow = FindVehicle<gameBoard, I, gameBoard::length-1>::row;
-    constexpr int Icol = FindVehicle<gameBoard, I, gameBoard::length-1>::col;
-    typedef MoveVehicle<gameBoard, Irow, Icol, RIGHT, 1>::board new_board;
-    int newrow = FindVehicle<new_board, I, new_board::length-1>::row;
-    int newcol = FindVehicle<new_board , I, new_board::length-1>::col;
+    constexpr int Prow = FindVehicle<gameBoard, P, gameBoard::length-1>::row;
+    constexpr int Pcol = FindVehicle<gameBoard, P, gameBoard::length-1>::col;
+    typedef MoveVehicle<gameBoard, Prow, Pcol, UP, 1>::board new_board;
+    int newrow = FindVehicle<new_board, P, new_board::length-1>::row;
+    int newcol = FindVehicle<new_board , P, new_board::length-1>::col;
     std::cout << newrow << std::endl << newcol << std::endl;
 
-    constexpr int newIrow = FindVehicle<new_board , I, new_board::length-1>::row;
-    constexpr int newIcol = FindVehicle<new_board , I, new_board::length-1>::col;
-    typedef MoveVehicle<new_board, newIrow, newIcol, LEFT, 1>::board new_new_board;
-    int newnewrow = FindVehicle<new_new_board, I, new_new_board::length-1>::row;
-    int newnewcol = FindVehicle<new_new_board , I, new_new_board::length-1>::col;
+    constexpr int newIrow = FindVehicle<new_board , P, new_board::length-1>::row;
+    constexpr int newIcol = FindVehicle<new_board , P, new_board::length-1>::col;
+    typedef MoveVehicle<new_board, newIrow, newIcol, DOWN, 1>::board new_new_board;
+    int newnewrow = FindVehicle<new_new_board, P, new_new_board::length-1>::row;
+    int newnewcol = FindVehicle<new_new_board , P, new_new_board::length-1>::col;
     std::cout << newnewrow << std::endl << newnewcol << std::endl;
 
-    typedef MoveVehicle<new_board, 0, 0, RIGHT, 1>::board new_new_new_board;
-    newnewrow = FindVehicle<new_new_new_board, Q, new_new_new_board::length-1>::row;
-    newnewcol = FindVehicle<new_new_new_board , Q, new_new_new_board::length-1>::col;
-    std::cout << newnewrow << std::endl << newnewcol << std::endl;
+
 
     return 0;
 }

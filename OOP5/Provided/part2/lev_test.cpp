@@ -1,10 +1,8 @@
 #include <iostream>
 #include <typeinfo>
-//#include "RushHour.h"
-//#include "Printer.h"
-#include "List.h"
-#include "Utilities.h"
-#include "MoveVehicle.h"
+#include "RushHour.h"
+#include "Printer.h"
+
 
 
 namespace classesForTesting {
@@ -184,7 +182,7 @@ static void providedExample() {
 
     static_assert(CheckSolution<gameBoard, moves>::result, "Fail"); // Game should be solved
 }
-
+*/
 static void checkWin_board_1x1_Test() {
 	typedef GameBoard< List<
 	        List < BoardCell< X , RIGHT , 1> >
@@ -216,7 +214,6 @@ static void checkWin_noWin_board_1x6_Test() {
 	> > gameBoard;
 	static_assert(not CheckWin<gameBoard>::result, "Fail");
 }
-*/
 //static void moveVehicle_game_Test() {
 //	typedef GameBoard< List<
 //	        List < BoardCell<EMPTY, RIGHT, 1>, BoardCell<EMPTY, RIGHT, 1>, BoardCell<EMPTY, RIGHT , 0>, BoardCell<R ,    UP,     3>, BoardCell< EMPTY , RIGHT , 0>,  BoardCell< EMPTY, RIGHT , 0>>,
@@ -333,7 +330,7 @@ static void moveVehicleErrorsTest() {
 
 
 
-#define COME_TO_THE_LEV_SIDE
+//#define COME_TO_THE_LEV_SIDE
 /*
  * Those are tests for few simple functions (not required), which've served me as a good base, when implementing more complex functionality.
  * Maybe those will help you to find a simpler solution, or at least will serve as an additional example of template metaprogramming.

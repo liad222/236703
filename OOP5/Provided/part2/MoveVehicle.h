@@ -5,10 +5,8 @@
 #ifndef OOP5_MOVEVEHICLE_H
 #define OOP5_MOVEVEHICLE_H
 
-#include "CellType.h"
-#include "Direction.h"
 #include "GameBoard.h"
-
+#include "TransposeList.h"
 
 template<typename T, CellType Type,int N>
 struct FindInList{};
@@ -91,7 +89,7 @@ struct MoveByOne<GameBoard<List<List<BoardCell<Type, Dir, Length>,UU...>, TT...>
                    C < b::width), "Out of Bounds!");
     typedef typename GetCell<b, R, C>::Cell cell;
     static_assert(cell::type != EMPTY, "Can't move EMPTY vehicle");
-    static_assert(cell::direction == RIGHT || cell::direction == LEFT, "Expected to move RIGHT");
+    //static_assert(cell::direction == RIGHT || cell::direction == LEFT, "Expected to move RIGHT");
     constexpr static int new_col = cell::length + C;
     static_assert(GetCell<b, R, new_col>::Cell::type == EMPTY, "Path is not clear!");
     typedef typename GetAtIndex<R, typename b::board>::value current_row;
@@ -109,7 +107,7 @@ struct MoveByOne<GameBoard<List<List<BoardCell<Type, Dir, Length>,UU...>, TT...>
                    C < b::width), "Out of Bounds!");
     typedef typename GetCell<b, R, C>::Cell cell;
     static_assert(cell::type != EMPTY, "Can't move EMPTY vehicle");
-    static_assert(cell::direction == RIGHT || cell::direction == LEFT, "Expected to move LEFT");
+    //static_assert(cell::direction == RIGHT || cell::direction == LEFT, "Expected to move LEFT");
     constexpr static int last_col = cell::length + C - 1;
     constexpr static int new_col = C - 1;
     static_assert(GetCell<b, R, new_col>::Cell::type == EMPTY, "Path is not clear!");
@@ -134,7 +132,7 @@ struct MoveVehicle<GameBoard<List<List<BoardCell<Type, Dir, Length>,UU...>, TT..
                     C < b::width), "Out of Bounds!");
     typedef typename GetCell<b, R, C>::Cell cell;
     static_assert(cell::type != EMPTY, "Can't move EMPTY vehicle");
-    static_assert(cell::direction == RIGHT || cell::direction == LEFT, "Expected to move RIGHT");
+    //static_assert(cell::direction == RIGHT || cell::direction == LEFT, "Expected to move RIGHT");
     typedef typename MoveVehicle<typename MoveByOne<b, R, C, RIGHT>::new_board, R, C+1, RIGHT, A-1>::board board;
 };
 
@@ -146,7 +144,7 @@ struct MoveVehicle<GameBoard<List<List<BoardCell<Type, Dir, Length>,UU...>, TT..
                    C < b::width), "Out of Bounds!");
     typedef typename GetCell<b, R, C>::Cell cell;
     static_assert(cell::type != EMPTY, "Can't move EMPTY vehicle");
-    static_assert(cell::direction == RIGHT || cell::direction == LEFT, "Expected to move LEFT");
+    //static_assert(cell::direction == RIGHT || cell::direction == LEFT, "Expected to move LEFT");
     typedef typename MoveVehicle<typename MoveByOne<b, R, C, LEFT>::new_board, R, C-1, LEFT, A-1>::board board;
 };
 
@@ -160,5 +158,46 @@ struct MoveVehicle<GameBoard<List<List<BoardCell<Type, Dir, Length>,UU...>, TT..
     typedef GameBoard<List<List<BoardCell<Type, Dir, Length>,UU...>, TT...>> board;
 };
 
+template<typename... UU, typename... TT,CellType Type, Direction Dir, int Length, int R, int C, int A>
+struct MoveVehicle<GameBoard<List<List<BoardCell<Type, Dir, Length>,UU...>, TT...>>, R, C, DOWN, A>{
+    typedef GameBoard<List<List<BoardCell<Type, Dir, Length>,UU...>, TT...>> b;
+    static_assert((R >= 0 && C >= 0 &&
+                   R < b::length &&
+                   C < b::width), "Out of Bounds!");
+    typedef typename GetCell<b, R, C>::Cell cell;
+    static_assert(cell::type != EMPTY, "Can't move EMPTY vehicle");
+    static_assert(cell::direction == UP || cell::direction == DOWN, "Expected to move DOWN");
+    typedef typename Transpose<typename b::board>::matrix transposed_lists;
+    typedef GameBoard<transposed_lists> transposed_board;
+    typedef typename MoveVehicle<transposed_board, C, R, RIGHT, A>::board temp_board;
+    typedef typename Transpose<typename temp_board::board>::matrix final_lists;
+    typedef GameBoard<final_lists> board;
+};
+
+template<typename... UU, typename... TT,CellType Type, Direction Dir, int Length, int R, int C, int A>
+struct MoveVehicle<GameBoard<List<List<BoardCell<Type, Dir, Length>,UU...>, TT...>>, R, C, UP, A>{
+    typedef GameBoard<List<List<BoardCell<Type, Dir, Length>,UU...>, TT...>> b;
+    static_assert((R >= 0 && C >= 0 &&
+                   R < b::length &&
+                   C < b::width), "Out of Bounds!");
+    typedef typename GetCell<b, R, C>::Cell cell;
+    static_assert(cell::type != EMPTY, "Can't move EMPTY vehicle");
+    static_assert(cell::direction == UP || cell::direction == DOWN, "Expected to move UP");
+    typedef typename Transpose<typename b::board>::matrix transposed_lists;
+    typedef GameBoard<transposed_lists> transposed_board;
+    typedef typename MoveVehicle<transposed_board, C, R, LEFT, A>::board temp_board;
+    typedef typename Transpose<typename temp_board::board>::matrix final_lists;
+    typedef GameBoard<final_lists> board;
+};
+
+template<typename... UU, typename... TT,CellType Type, Direction Dir, int Length, int R, int C>
+struct MoveVehicle<GameBoard<List<List<BoardCell<Type, Dir, Length>,UU...>, TT...>>, R, C, UP, 0>{
+    typedef GameBoard<List<List<BoardCell<Type, Dir, Length>,UU...>, TT...>> board;
+};
+
+template<typename... UU, typename... TT,CellType Type, Direction Dir, int Length, int R, int C>
+struct MoveVehicle<GameBoard<List<List<BoardCell<Type, Dir, Length>,UU...>, TT...>>, R, C, DOWN, 0>{
+    typedef GameBoard<List<List<BoardCell<Type, Dir, Length>,UU...>, TT...>> board;
+};
 
 #endif //OOP5_MOVEVEHICLE_H

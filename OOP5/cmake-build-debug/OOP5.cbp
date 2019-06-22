@@ -100,10 +100,16 @@
 		<Unit filename="C:/Users/Liad/CLionProjects/OOP5/Provided/part2/MoveVehicle.h">
 			<Option target="OOP5"/>
 		</Unit>
+		<Unit filename="C:/Users/Liad/CLionProjects/OOP5/Provided/part2/RushHour.h">
+			<Option target="OOP5"/>
+		</Unit>
+		<Unit filename="C:/Users/Liad/CLionProjects/OOP5/Provided/part2/TransposeList.h">
+			<Option target="OOP5"/>
+		</Unit>
 		<Unit filename="C:/Users/Liad/CLionProjects/OOP5/Provided/part2/Utilities.h">
 			<Option target="OOP5"/>
 		</Unit>
-		<Unit filename="C:/Users/Liad/CLionProjects/OOP5/Provided/part2/test.cpp">
+		<Unit filename="C:/Users/Liad/CLionProjects/OOP5/Provided/part2/lev_test.cpp">
 			<Option target="OOP5"/>
 		</Unit>
 		<Unit filename="C:/Users/Liad/CLionProjects/OOP5/CMakeLists.txt">

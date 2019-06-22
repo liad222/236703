@@ -3,4 +3,4 @@ project(OOP5)
 
 set(CMAKE_CXX_STANDARD 11)
 
-add_executable(OOP5  Provided/part2/List.h Provided/part2/test.cpp Provided/part2/Utilities.h Provided/part2/CellType.h Provided/part2/Direction.h Provided/part2/BoardCell.h Provided/part2/GameBoard.h Provided/part2/MoveVehicle.h)
+add_executable(OOP5  Provided/part2/List.h Provided/part2/lev_test.cpp Provided/part2/Utilities.h Provided/part2/CellType.h Provided/part2/Direction.h Provided/part2/BoardCell.h Provided/part2/GameBoard.h Provided/part2/MoveVehicle.h Provided/part2/RushHour.h Provided/part2/TransposeList.h)
