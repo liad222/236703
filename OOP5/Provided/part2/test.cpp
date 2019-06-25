@@ -1,44 +1,15 @@
 //
 // Created by Liad on 18/06/2019.
 //
-#include "List.h"
-#include "Utilities.h"
-#include <iostream>
-#include "MoveVehicle.h"
 
+#include <iostream>
+#include "Printer.h"
 template <int N>
 struct Int{
     constexpr static int num = N;
 };
 
 
-template<typename>
-struct Printer;
-
-
-
-template<typename Head, typename... Tail>
-struct Printer<List<Head, Tail...>>{
-    static void print(std::ostream& output){
-        Printer<Head>::print(output);
-        output << " ";
-        Printer<List<Tail...>>::print(output);
-    }
-};
-
-template<>
-struct Printer<List<>>{
-    static void print(std::ostream& output){
-        output << std::endl;
-    }
-};
-
-template<int N>
-struct Printer<Int<N>>{
-    static void print(std::ostream& output){
-        output << Int<N>::num;
-    }
-};
 int main(){
     typedef List<Int<1>, Int<2>, Int<3>> list;
     typedef typename list::next listTail;
@@ -110,6 +81,16 @@ int main(){
     std::cout << newnewrow << std::endl << newnewcol << std::endl;
 
 
+    std::cout << " Lev's Board-----------------------------------------------------"<< std::endl;
+    typedef GameBoard< List<
+            List < BoardCell<EMPTY, RIGHT, 1>, BoardCell<EMPTY, RIGHT, 1>, BoardCell<EMPTY, RIGHT , 0>, BoardCell<R ,    UP,     3>, BoardCell< EMPTY , RIGHT , 0>,  BoardCell< EMPTY, RIGHT , 0>>,
+            List < BoardCell<EMPTY, LEFT , 2>, BoardCell<EMPTY, LEFT , 2>, BoardCell<EMPTY, RIGHT , 0>, BoardCell<R ,    UP,     3>, BoardCell< EMPTY , RIGHT , 0>,  BoardCell< EMPTY, RIGHT , 0>>,
+            List < BoardCell<EMPTY, RIGHT, 0>, BoardCell<X,     RIGHT, 2>, BoardCell<X ,    RIGHT,  2>, BoardCell<R,     UP,     3>, BoardCell< EMPTY , RIGHT , 0>,  BoardCell< P ,    UP,     3>>,
+            List < BoardCell<EMPTY, RIGHT, 0>, BoardCell<C,     DOWN , 2>, BoardCell<D ,    LEFT  , 2>, BoardCell<D ,    LEFT  , 2>, BoardCell< EMPTY , RIGHT , 0>,  BoardCell< P,     UP ,    3>>,
+            List < BoardCell<EMPTY, RIGHT, 0>, BoardCell<C,     DOWN , 2>, BoardCell<EMPTY, RIGHT , 0>, BoardCell<EMPTY, RIGHT , 0>, BoardCell< EMPTY , RIGHT , 0>,  BoardCell< P ,    UP ,    3>>,
+            List < BoardCell<EMPTY, RIGHT, 0>, BoardCell<EMPTY, RIGHT, 0>, BoardCell<EMPTY, UP    , 2>, BoardCell<EMPTY, RIGHT , 0>, BoardCell< F ,     RIGHT , 2>,  BoardCell< F,     RIGHT , 2>>
+    > > gameBoard2;
 
+    typedef MoveVehicle<gameBoard2, 3, 1, DOWN,  1>::board b01; /* C */
     return 0;
 }
