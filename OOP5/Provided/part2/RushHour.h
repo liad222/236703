@@ -37,4 +37,38 @@ struct CheckWin<GameBoard<List<List<BoardCell<Type, Dir, Length>,UU...>, TT...>>
     constexpr static bool result = CheckWinAux<board, Xrow, Xcol + XCell::length - 1, dif>::result;
 };
 
+
+template<typename T, typename U, int N>
+struct CheckSolutionAux{};
+
+template<typename... UU, typename... TT,CellType Type, Direction Dir, int Length, CellType MType, Direction MDir, int MAmount, typename... MM, int N>
+struct CheckSolutionAux<GameBoard<List<List<BoardCell<Type, Dir, Length>,UU...>, TT...>>, List<Move<MType, MDir, MAmount>, MM...>, N> {
+    typedef GameBoard<List<List<BoardCell<Type, Dir, Length>,UU...>, TT...>> b;
+    constexpr static int row = FindVehicle<b, MType, b::length-1>::row;
+    constexpr static int col = FindVehicle<b, MType, b::length-1>::col;
+    typedef typename MoveVehicle<b, row, col, MDir, MAmount>::board temp_board;
+    typedef typename CheckSolutionAux<temp_board, typename List<Move<MType, MDir, MAmount>, MM...>::next, N - 1>::board board;
+};
+
+template<typename... UU, typename... TT,CellType Type, Direction Dir, int Length, CellType MType, Direction MDir, int MAmount, typename... MM>
+struct CheckSolutionAux<GameBoard<List<List<BoardCell<Type, Dir, Length>,UU...>, TT...>>, List<Move<MType, MDir, MAmount>, MM...>, 1> {
+    typedef GameBoard<List<List<BoardCell<Type, Dir, Length>,UU...>, TT...>> b;
+    constexpr static int row = FindVehicle<b, MType, b::length-1>::row;
+    constexpr static int col = FindVehicle<b, MType, b::length-1>::col;
+    typedef typename MoveVehicle<b, row, col, MDir, MAmount>::board board;
+};
+
+
+
+template<typename T, typename U>
+struct CheckSolution{};
+
+
+template<typename... UU, typename... TT,CellType Type, Direction Dir, int Length, CellType MType, Direction MDir, int MAmount, typename... MM>
+struct CheckSolution<GameBoard<List<List<BoardCell<Type, Dir, Length>,UU...>, TT...>>, List<Move<MType, MDir, MAmount>, MM...>>{
+    typedef GameBoard<List<List<BoardCell<Type, Dir, Length>,UU...>, TT...>> b;
+    typedef typename CheckSolutionAux<b, List<Move<MType, MDir, MAmount>, MM...>, List<Move<MType, MDir, MAmount>, MM...>::size>::board final_board;
+    constexpr static bool result = CheckWin<final_board>::result;
+};
+
 #endif //OOP5_RUSHHOUR_H

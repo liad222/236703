@@ -159,7 +159,7 @@ static void moveFieldsTest() {
 	static_assert(Move<X, RIGHT, 25>::direction == RIGHT, "Move Fail");
 	static_assert(Move<X, RIGHT, 25>::amount == 25, "Move Fail");
 }
-/*
+
 static void providedExample() {
 	typedef GameBoard< List<
 	        List < BoardCell< EMPTY , RIGHT , 1>, BoardCell< EMPTY , RIGHT , 0>, BoardCell< EMPTY , RIGHT , 0>, BoardCell< EMPTY , RIGHT , 0>, BoardCell< O , DOWN , 3>,      BoardCell< EMPTY , RIGHT , 0> >,
@@ -181,7 +181,7 @@ static void providedExample() {
 
     static_assert(CheckSolution<gameBoard, moves>::result, "Fail"); // Game should be solved
 }
-*/
+
 static void checkWin_board_1x1_Test() {
 	typedef GameBoard< List<
 	        List < BoardCell< X , RIGHT , 1> >
@@ -251,27 +251,27 @@ static void moveVehicle_game_Test() {
     std::cout << __FUNCTION__ << " end." <<  std::endl;
 }
 
-//static void checkSolution_game_Test() {
-//
-//	/* Same board and solution as moveVehicle_game_Test, but using Move list and CheckSolution */
-//
-//	typedef GameBoard< List<
-//	        List < BoardCell<EMPTY, RIGHT, 1>, BoardCell<EMPTY, RIGHT, 1>, BoardCell<EMPTY, RIGHT , 0>, BoardCell<R ,    UP,     3>, BoardCell< EMPTY , RIGHT , 0>,  BoardCell< EMPTY, RIGHT , 0>>,
-//	        List < BoardCell<EMPTY, LEFT , 2>, BoardCell<EMPTY, LEFT , 2>, BoardCell<EMPTY, RIGHT , 0>, BoardCell<R ,    UP,     3>, BoardCell< EMPTY , RIGHT , 0>,  BoardCell< EMPTY, RIGHT , 0>>,
-//	        List < BoardCell<EMPTY, RIGHT, 0>, BoardCell<X,     RIGHT, 2>, BoardCell<X ,    RIGHT,  2>, BoardCell<R,     UP,     3>, BoardCell< EMPTY , RIGHT , 0>,  BoardCell< P ,    UP,     3>>,
-//	        List < BoardCell<EMPTY, RIGHT, 0>, BoardCell<C,     DOWN , 2>, BoardCell<D ,    LEFT  , 2>, BoardCell<D ,    LEFT  , 2>, BoardCell< EMPTY , RIGHT , 0>,  BoardCell< P,     UP ,    3>>,
-//	        List < BoardCell<EMPTY, RIGHT, 0>, BoardCell<C,     DOWN , 2>, BoardCell<EMPTY, RIGHT , 0>, BoardCell<EMPTY, RIGHT , 0>, BoardCell< EMPTY , RIGHT , 0>,  BoardCell< P ,    UP ,    3>>,
-//	        List < BoardCell<EMPTY, RIGHT, 0>, BoardCell<EMPTY, RIGHT, 0>, BoardCell<EMPTY, UP    , 2>, BoardCell<EMPTY, RIGHT , 0>, BoardCell< F ,     RIGHT , 2>,  BoardCell< F,     RIGHT , 2>>
-//	> > gameBoard;
-//
-//	typedef List<
-//	        Move < C, DOWN,  1 > , Move < P, UP,   2 > , Move < D, RIGHT, 2 > , Move < R, DOWN, 3 > ,
-//			Move < X, RIGHT, 1 > , Move < C, UP,   4 > , Move < X, LEFT,  1 > , Move < R, UP,   3 > ,
-//			Move < D, LEFT,  4 > , Move < F, LEFT, 4 > , Move < P, DOWN,  3 > , Move < R, DOWN, 3 >
-//	> moves;
-//
-//	static_assert(CheckSolution<gameBoard, moves>::result, "Fail");
-//}
+static void checkSolution_game_Test() {
+
+	/* Same board and solution as moveVehicle_game_Test, but using Move list and CheckSolution */
+
+	typedef GameBoard< List<
+	        List < BoardCell<EMPTY, RIGHT, 1>, BoardCell<EMPTY, RIGHT, 1>, BoardCell<EMPTY, RIGHT , 0>, BoardCell<R ,    UP,     3>, BoardCell< EMPTY , RIGHT , 0>,  BoardCell< EMPTY, RIGHT , 0>>,
+	        List < BoardCell<EMPTY, LEFT , 2>, BoardCell<EMPTY, LEFT , 2>, BoardCell<EMPTY, RIGHT , 0>, BoardCell<R ,    UP,     3>, BoardCell< EMPTY , RIGHT , 0>,  BoardCell< EMPTY, RIGHT , 0>>,
+	        List < BoardCell<EMPTY, RIGHT, 0>, BoardCell<X,     RIGHT, 2>, BoardCell<X ,    RIGHT,  2>, BoardCell<R,     UP,     3>, BoardCell< EMPTY , RIGHT , 0>,  BoardCell< P ,    UP,     3>>,
+	        List < BoardCell<EMPTY, RIGHT, 0>, BoardCell<C,     DOWN , 2>, BoardCell<D ,    LEFT  , 2>, BoardCell<D ,    LEFT  , 2>, BoardCell< EMPTY , RIGHT , 0>,  BoardCell< P,     UP ,    3>>,
+	        List < BoardCell<EMPTY, RIGHT, 0>, BoardCell<C,     DOWN , 2>, BoardCell<EMPTY, RIGHT , 0>, BoardCell<EMPTY, RIGHT , 0>, BoardCell< EMPTY , RIGHT , 0>,  BoardCell< P ,    UP ,    3>>,
+	        List < BoardCell<EMPTY, RIGHT, 0>, BoardCell<EMPTY, RIGHT, 0>, BoardCell<EMPTY, UP    , 2>, BoardCell<EMPTY, RIGHT , 0>, BoardCell< F ,     RIGHT , 2>,  BoardCell< F,     RIGHT , 2>>
+	> > gameBoard;
+
+	typedef List<
+	        Move < C, DOWN,  1 > , Move < P, UP,   2 > , Move < D, RIGHT, 2 > , Move < R, DOWN, 3 > ,
+			Move < X, RIGHT, 1 > , Move < C, UP,   4 > , Move < X, LEFT,  1 > , Move < R, UP,   3 > ,
+			Move < D, LEFT,  4 > , Move < F, LEFT, 4 > , Move < P, DOWN,  3 > , Move < R, DOWN, 3 >
+	> moves;
+
+	static_assert(CheckSolution<gameBoard, moves>::result, "Fail");
+}
 
 
 
@@ -505,8 +505,38 @@ static void getCoordinatesTest() {
 #endif /* COME_TO_THE_LEV_SIDE */
 
 
+
+
+static void level40Test(){
+
+    typedef GameBoard< List<
+            List < BoardCell<O, DOWN, 3>     , BoardCell<A, RIGHT, 2>    , BoardCell<A, RIGHT, 2>, BoardCell<EMPTY, UP, 3>, BoardCell< B , DOWN , 2>,  BoardCell< EMPTY, RIGHT , 0>>,
+            List < BoardCell<O, DOWN, 3>     , BoardCell<C,    UP, 2>    , BoardCell<D, DOWN,  2>, BoardCell<EMPTY, UP, 3>, BoardCell< B , DOWN ,2 >,  BoardCell< P, UP ,        3>>,
+            List < BoardCell<O, DOWN, 3>     , BoardCell<C,    UP, 2>    , BoardCell<D, DOWN,  2>, BoardCell<X,  RIGHT, 2>, BoardCell< X,  RIGHT, 2>,  BoardCell< P ,    UP,     3>>,
+            List < BoardCell<Q, RIGHT,3>     , BoardCell<Q, RIGHT, 3>    , BoardCell<Q, RIGHT, 3>, BoardCell<E ,  UP  , 2>, BoardCell< EMPTY, UP, 0>,  BoardCell< P,     UP ,    3>>,
+            List < BoardCell<EMPTY, RIGHT,0> , BoardCell<EMPTY, DOWN , 2>, BoardCell<F, UP ,   2>, BoardCell<E,   UP  , 2>, BoardCell< K, RIGHT , 2>,  BoardCell< K , RIGHT ,    2>>,
+            List < BoardCell<H, RIGHT, 2>    , BoardCell<H, RIGHT, 2>    , BoardCell<F, UP    ,2>, BoardCell<I, RIGHT , 2>, BoardCell< I, RIGHT , 2>,  BoardCell< EMPTY, RIGHT , 2>>
+    > > gameBoard;
+
+    typedef List<
+            Move < P, UP,  1 > ,   Move < I, RIGHT,  1 > , Move < E, DOWN, 1 > , Move < Q, RIGHT, 3 > ,
+            Move < F, UP, 1 > , Move < H, RIGHT,   1 > , Move < O, DOWN,  3 > , Move < A, LEFT,   1 > ,
+            Move < D, UP,  1 > , Move < C, DOWN, 2 > , Move < X, LEFT,  3 > , Move < B, DOWN, 1 > ,Move < D, DOWN, 1> ,Move < A, RIGHT,3> , Move < D, UP, 1> , Move < X, RIGHT, 2> ,
+            Move < O, UP, 3> , Move < H, LEFT,1 > ,Move < F,DOWN ,1 > , Move < C, UP, 3> , Move < Q, LEFT, 3> , Move < P,DOWN ,1 > ,Move < X, LEFT, 1> , Move < A,RIGHT ,1 > ,
+            Move < E, UP, 4> , Move < Q,RIGHT ,2 > , Move < X, RIGHT,1 > , Move < C,DOWN ,3 > , Move < X, LEFT, 1> , Move < E, DOWN,1 > , Move < A,LEFT ,1 > ,
+            Move < P,UP ,1 > , Move < Q, RIGHT,1 > , Move < F,UP ,1 > , Move < H,RIGHT ,1 > , Move < O,DOWN ,3 > , Move < X, LEFT, 1> , Move < D,DOWN ,1 > , Move < A, LEFT,3 > ,
+            Move < B, UP, 1> , Move < E,UP ,1 > , Move < D, UP ,1 > , Move < X,RIGHT ,3 > ,Move < O, UP, 1> ,Move < H,LEFT ,1 > , Move < F,DOWN ,1 > , Move < I, LEFT, 1> ,
+            Move < K, LEFT,1 > , Move < Q, LEFT,1 > ,Move < P, DOWN, 3>, Move < X, LEFT, 2>, Move < X, RIGHT, 1>
+    > moves;
+
+    static_assert(CheckSolution<gameBoard, moves>::result, "Fail");
+}
+
+
+
+
 int main(){
-	//providedExample();
+	providedExample();
 	listTest_Basic();
 	listTest_Integration();
 	conditionalTest();
@@ -518,7 +548,8 @@ int main(){
 	checkWin_noWin_board_3x3_Test();
 	checkWin_noWin_board_1x6_Test();
 	moveVehicle_game_Test();
-//	checkSolution_game_Test();
+    checkSolution_game_Test();
+    level40Test();
 
 #ifdef TEST_COMPILATION_ERRORS
 	moveCannotBeEmptyTest();
