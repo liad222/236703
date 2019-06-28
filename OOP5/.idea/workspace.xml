@@ -24,75 +24,51 @@
     <session id="-1690424266">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="13" />
+          <entry key="project.closed" value="14" />
           <entry key="project.open.time.3" value="1" />
           <entry key="project.open.time.4" value="1" />
-          <entry key="project.open.time.5" value="6" />
+          <entry key="project.open.time.5" value="7" />
           <entry key="project.open.time.6" value="5" />
-          <entry key="project.opened" value="13" />
+          <entry key="project.opened" value="14" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="cpp" value="1758" />
-          <entry key="h" value="8998" />
+          <entry key="h" value="11190" />
           <entry key="txt" value="56" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CMakeLists.txt" value="56" />
-          <entry key="ObjectiveC" value="10756" />
+          <entry key="ObjectiveC" value="12948" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="cpp" value="13" />
-          <entry key="h" value="53" />
+          <entry key="h" value="55" />
           <entry key="txt" value="23" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CMakeLists.txt" value="23" />
-          <entry key="ObjectiveC" value="66" />
+          <entry key="ObjectiveC" value="68" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Provided/part1/Subject.h">
+        <entry file="file://$PROJECT_DIR$/Provided/part2/MoveVehicle.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="184">
-              <caret line="48" column="16" selection-start-line="48" selection-start-column="16" selection-end-line="48" selection-end-column="16" />
+            <state relative-caret-position="878">
+              <caret line="168" selection-start-line="168" selection-end-line="168" />
               <folding>
-                <element signature="e#88#119#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Provided/part1/Part1Examples.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-425">
-              <caret line="5" selection-start-line="5" selection-end-line="5" />
-              <folding>
-                <element signature="e#0#19#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Provided/part1/Observer.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="27" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
-              <folding>
-                <element signature="e#98#110#0" expanded="true" />
+                <element signature="e#10690#10736#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -122,13 +98,13 @@
         <option value="$PROJECT_DIR$/Provided/part2/List.h" />
         <option value="$PROJECT_DIR$/Provided/part2/TransposeList.h" />
         <option value="$PROJECT_DIR$/Provided/part2/Printer.h" />
-        <option value="$PROJECT_DIR$/Provided/part2/MoveVehicle.h" />
         <option value="$PROJECT_DIR$/Provided/part2/test.cpp" />
         <option value="$PROJECT_DIR$/Provided/part2/RushHour.h" />
         <option value="$PROJECT_DIR$/Provided/part2/lev_test.cpp" />
         <option value="$PROJECT_DIR$/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/Provided/part1/Subject.h" />
         <option value="$PROJECT_DIR$/Provided/part1/Observer.h" />
+        <option value="$PROJECT_DIR$/Provided/part2/MoveVehicle.h" />
       </list>
     </option>
   </component>
@@ -148,7 +124,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -165,12 +140,13 @@
               <item name="OOP5" type="b2602c69:ProjectViewProjectNode" />
               <item name="OOP5" type="462c0819:PsiDirectoryNode" />
               <item name="Provided" type="462c0819:PsiDirectoryNode" />
-              <item name="part1" type="462c0819:PsiDirectoryNode" />
+              <item name="part2" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -234,16 +210,17 @@
       <workItem from="1561727853771" duration="1407000" />
       <workItem from="1561729643124" duration="4592000" />
       <workItem from="1561737379846" duration="642000" />
+      <workItem from="1561738747271" duration="3695000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="52853000" />
+    <option name="totallyTimeSpent" value="56548000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23238866" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23643725" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -334,13 +311,6 @@
     <entry file="file://$PROJECT_DIR$/Provided/part1/OOP5EventException.h">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Provided/part2/MoveVehicle.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Provided/part2/List.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="235">
@@ -376,16 +346,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Provided/part2/GameBoard.h">
+    <entry file="file://$PROJECT_DIR$/Provided/part1/Subject.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="8" column="14" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
+        <state relative-caret-position="184">
+          <caret line="48" column="16" selection-start-line="48" selection-start-column="16" selection-end-line="48" selection-end-column="16" />
+          <folding>
+            <element signature="e#88#119#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Provided/part1/Part1Examples.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-425">
+        <state relative-caret-position="17">
           <caret line="5" selection-start-line="5" selection-end-line="5" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
@@ -403,12 +376,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Provided/part1/Subject.h">
+    <entry file="file://$PROJECT_DIR$/Provided/part2/GameBoard.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="48" column="16" selection-start-line="48" selection-start-column="16" selection-end-line="48" selection-end-column="16" />
+        <state relative-caret-position="136">
+          <caret line="8" column="14" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Provided/part2/MoveVehicle.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="878">
+          <caret line="168" selection-start-line="168" selection-end-line="168" />
           <folding>
-            <element signature="e#88#119#0" expanded="true" />
+            <element signature="e#10690#10736#0" expanded="true" />
           </folding>
         </state>
       </provider>

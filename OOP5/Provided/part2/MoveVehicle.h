@@ -8,6 +8,10 @@
 #include "GameBoard.h"
 #include "TransposeList.h"
 
+//The struct receives a list of BoardCells, CellType LType and an index in the list,
+//and saves in the field "value" the first index in the list that has a BoardCell with the type LType-
+//if a previous index had the required Type of vehicle then "value" will be the previous "value",
+//otherwise, if the current index has the required Type of vehicle, "value" will be the current index.
 template<typename T, CellType Type,int N>
 struct FindInList{};
 
@@ -22,6 +26,8 @@ struct FindInList<List<BoardCell<Type, Dir, Length>, TT...>, LType, N> {
     constexpr static int index = ConditionalInteger<(previous != -1), previous, current>::value;
 };
 
+//The struct receives a list of BoardCells of size 1, CellType LType and 0,
+//and saves in the field "value" 0 if the first index of the list has the required Type of vehicle, -1 otherwise.
 template<typename... TT, CellType LType, CellType Type, Direction Dir, int Length>
 struct FindInList<List<BoardCell<Type, Dir, Length>, TT...>, LType, 0> {
     static_assert(LType != EMPTY, "Can't find EMPTY!!");
@@ -40,7 +46,10 @@ struct Move{
     constexpr static int amount = Amount;
 };
 
-
+//the struct receives gameboard, CellType Ltype and the number of lines in the board (minus 1 because the first line is line 0),
+// and saves in the fields row, col the "highest" row and the "leftmost" column that has the required Type of vehicle-
+//if a previous row, col had the required Type of vehicle then row, col will be the previous row, col,
+//otherwise, if the current row, col has the required Type of vehicle, row, col will be the current row, col.
 template<typename U, CellType Type, int N>
 struct FindVehicle{};
 
@@ -59,6 +68,10 @@ struct FindVehicle<GameBoard<List<List<BoardCell<Type, Dir, Length>,UU...>, TT..
     constexpr static int col = ConditionalInteger<(previous_col != -1), previous_col, current_col>::value;
 };
 
+
+//The struct receives a gameboard, CellType Ltype and 0,
+//and saves in the fields row, col 0, the "leftmost" column that
+// has the required Type of vehicle if the first row of the gameboard has the required Type of vehicle, -1 otherwise.
 template<typename... UU, typename... TT, CellType LType,CellType Type, Direction Dir, int Length>
 struct FindVehicle<GameBoard<List<List<BoardCell<Type, Dir, Length>,UU...>, TT...>>, LType, 0>{
     static_assert(LType != EMPTY, "Can't find EMPTY!!");
@@ -68,6 +81,8 @@ struct FindVehicle<GameBoard<List<List<BoardCell<Type, Dir, Length>,UU...>, TT..
     constexpr static int row = ConditionalInteger<(col != -1), 0, -1>::value;
 };
 
+
+//the struct receives gameboard, row, col and returns the BoardCell in line number row and index number col of the gameboard.
 template<typename T, int row, int col>
 struct GetCell{};
 
@@ -78,6 +93,9 @@ struct GetCell<GameBoard<List<List<BoardCell<Type, Dir, Length>,UU...>, TT...>>,
     typedef typename GetAtIndex<col, Row>::value Cell;
 };
 
+
+//the struct receives a gameboard, R, C and Direction(Right or Left)
+// and moves the car in line number R and index number C of the gameboard, one index to the required Direction.
 template<typename T, int R, int C, Direction D>
 struct MoveByOne{};
 
@@ -121,7 +139,8 @@ struct MoveByOne<GameBoard<List<List<BoardCell<Type, Dir, Length>,UU...>, TT...>
 
 
 
-
+//the struct receives a gameboard, R, C, NDir, CLen
+// and changes the direction of the car in line number R, index number C to be NDir. CLen is the length of the car.
 template<typename T, int R, int C, Direction NDir, int CLen>
 struct ChangeCells{};
 
@@ -147,6 +166,12 @@ struct ChangeCells<GameBoard<List<List<BoardCell<Type, Dir, Length>,UU...>, TT..
 };
 
 
+
+//the struct that moves a car the required number of cells and in the required direction according to a move.
+//if the required direction is right or left, the struct creates a new line with the car in her new position(if possible) with the help of MoveByOne.
+//if the required direction is up or down, the struct does transpose to the gameboard,
+//changes the direction of the cells of the car accordingly, moves the car right or left respectivly,
+//changes the direction of the cells to the original direction and transpose back the gameboard.
 template<typename T, int R, int C, Direction D, int A>
 struct MoveVehicle{};
 
