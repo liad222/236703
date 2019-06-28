@@ -11,32 +11,32 @@
 
 template<typename T>
 class Subject{
-    std::vector<Observer<T>> Observers;
+    std::vector<Observer<T>*> Observers;
 
 public:
     Subject(){
-        Observers = std::vector<Observer<T>>();
+        Observers = std::vector<Observer<T>*>();
     }
 
     void notify(const T& t){
-        for(typename std::vector<Observer<T>>::iterator it = Observers.begin(); it != Observers.end(); ++it){
-            it->handleEvent(t);
+        for(typename std::vector<Observer<T>*>::iterator it = Observers.begin(); it != Observers.end(); ++it){
+            (*it)->handleEvent(t);
         }
     }
 
     void addObserver(Observer<T>& o){
-        for(typename std::vector<Observer<T>>::iterator it = Observers.begin(); it != Observers.end(); ++it){
-            if(*it == o){
+        for(typename std::vector<Observer<T>*>::iterator it = Observers.begin(); it != Observers.end(); ++it){
+            if(*it == &o){
                 throw ObserverAlreadyKnownToSubject();
             }
         }
-        Observers.push_back(o);
+        Observers.push_back(&o);
     }
 
 
     void removeObserver(Observer<T>& o){
-        for(typename std::vector<Observer<T>>::iterator it = Observers.begin(); it != Observers.end(); ++it){
-            if(*it == o){
+        for(typename std::vector<Observer<T>*>::iterator it = Observers.begin(); it != Observers.end(); ++it){
+            if(*it == &o){
                 Observers.erase(it);
             }
         }
@@ -59,6 +59,8 @@ public:
         this->notify(t);
         return *this;
     }
+
+    ~Subject(){};
 
 };
 

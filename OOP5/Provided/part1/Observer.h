@@ -10,9 +10,7 @@ class Observer{
 public:
     Observer(){}
     virtual void handleEvent(const T& t) = 0;
-    bool operator==(const Observer<T>& t){
-        return this == t;
-    }
+    virtual ~Observer() {};
 };
 
 
