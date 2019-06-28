@@ -56,27 +56,27 @@ include CMakeFiles/OOP5.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/OOP5.dir/flags.make
 
-CMakeFiles/OOP5.dir/Provided/part2/lev_test.cpp.obj: CMakeFiles/OOP5.dir/flags.make
-CMakeFiles/OOP5.dir/Provided/part2/lev_test.cpp.obj: ../Provided/part2/lev_test.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Liad\CLionProjects\OOP5\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/OOP5.dir/Provided/part2/lev_test.cpp.obj"
-	C:\TDM-GCC-64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\OOP5.dir\Provided\part2\lev_test.cpp.obj -c C:\Users\Liad\CLionProjects\OOP5\Provided\part2\lev_test.cpp
+CMakeFiles/OOP5.dir/Provided/part1/Part1Examples.cpp.obj: CMakeFiles/OOP5.dir/flags.make
+CMakeFiles/OOP5.dir/Provided/part1/Part1Examples.cpp.obj: ../Provided/part1/Part1Examples.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Liad\CLionProjects\OOP5\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/OOP5.dir/Provided/part1/Part1Examples.cpp.obj"
+	C:\TDM-GCC-64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\OOP5.dir\Provided\part1\Part1Examples.cpp.obj -c C:\Users\Liad\CLionProjects\OOP5\Provided\part1\Part1Examples.cpp
 
-CMakeFiles/OOP5.dir/Provided/part2/lev_test.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/OOP5.dir/Provided/part2/lev_test.cpp.i"
-	C:\TDM-GCC-64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Liad\CLionProjects\OOP5\Provided\part2\lev_test.cpp > CMakeFiles\OOP5.dir\Provided\part2\lev_test.cpp.i
+CMakeFiles/OOP5.dir/Provided/part1/Part1Examples.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/OOP5.dir/Provided/part1/Part1Examples.cpp.i"
+	C:\TDM-GCC-64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Liad\CLionProjects\OOP5\Provided\part1\Part1Examples.cpp > CMakeFiles\OOP5.dir\Provided\part1\Part1Examples.cpp.i
 
-CMakeFiles/OOP5.dir/Provided/part2/lev_test.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/OOP5.dir/Provided/part2/lev_test.cpp.s"
-	C:\TDM-GCC-64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Liad\CLionProjects\OOP5\Provided\part2\lev_test.cpp -o CMakeFiles\OOP5.dir\Provided\part2\lev_test.cpp.s
+CMakeFiles/OOP5.dir/Provided/part1/Part1Examples.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/OOP5.dir/Provided/part1/Part1Examples.cpp.s"
+	C:\TDM-GCC-64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Liad\CLionProjects\OOP5\Provided\part1\Part1Examples.cpp -o CMakeFiles\OOP5.dir\Provided\part1\Part1Examples.cpp.s
 
 # Object files for target OOP5
 OOP5_OBJECTS = \
-"CMakeFiles/OOP5.dir/Provided/part2/lev_test.cpp.obj"
+"CMakeFiles/OOP5.dir/Provided/part1/Part1Examples.cpp.obj"
 
 # External object files for target OOP5
 OOP5_EXTERNAL_OBJECTS =
 
-OOP5.exe: CMakeFiles/OOP5.dir/Provided/part2/lev_test.cpp.obj
+OOP5.exe: CMakeFiles/OOP5.dir/Provided/part1/Part1Examples.cpp.obj
 OOP5.exe: CMakeFiles/OOP5.dir/build.make
 OOP5.exe: CMakeFiles/OOP5.dir/linklibs.rsp
 OOP5.exe: CMakeFiles/OOP5.dir/objects1.rsp

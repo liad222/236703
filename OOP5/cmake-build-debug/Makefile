@@ -122,32 +122,32 @@ OOP5/fast:
 	$(MAKE) -f CMakeFiles\OOP5.dir\build.make CMakeFiles/OOP5.dir/build
 .PHONY : OOP5/fast
 
-Provided/part2/lev_test.obj: Provided/part2/lev_test.cpp.obj
+Provided/part1/Part1Examples.obj: Provided/part1/Part1Examples.cpp.obj
 
-.PHONY : Provided/part2/lev_test.obj
+.PHONY : Provided/part1/Part1Examples.obj
 
 # target to build an object file
-Provided/part2/lev_test.cpp.obj:
-	$(MAKE) -f CMakeFiles\OOP5.dir\build.make CMakeFiles/OOP5.dir/Provided/part2/lev_test.cpp.obj
-.PHONY : Provided/part2/lev_test.cpp.obj
+Provided/part1/Part1Examples.cpp.obj:
+	$(MAKE) -f CMakeFiles\OOP5.dir\build.make CMakeFiles/OOP5.dir/Provided/part1/Part1Examples.cpp.obj
+.PHONY : Provided/part1/Part1Examples.cpp.obj
 
-Provided/part2/lev_test.i: Provided/part2/lev_test.cpp.i
+Provided/part1/Part1Examples.i: Provided/part1/Part1Examples.cpp.i
 
-.PHONY : Provided/part2/lev_test.i
+.PHONY : Provided/part1/Part1Examples.i
 
 # target to preprocess a source file
-Provided/part2/lev_test.cpp.i:
-	$(MAKE) -f CMakeFiles\OOP5.dir\build.make CMakeFiles/OOP5.dir/Provided/part2/lev_test.cpp.i
-.PHONY : Provided/part2/lev_test.cpp.i
+Provided/part1/Part1Examples.cpp.i:
+	$(MAKE) -f CMakeFiles\OOP5.dir\build.make CMakeFiles/OOP5.dir/Provided/part1/Part1Examples.cpp.i
+.PHONY : Provided/part1/Part1Examples.cpp.i
 
-Provided/part2/lev_test.s: Provided/part2/lev_test.cpp.s
+Provided/part1/Part1Examples.s: Provided/part1/Part1Examples.cpp.s
 
-.PHONY : Provided/part2/lev_test.s
+.PHONY : Provided/part1/Part1Examples.s
 
 # target to generate assembly for a file
-Provided/part2/lev_test.cpp.s:
-	$(MAKE) -f CMakeFiles\OOP5.dir\build.make CMakeFiles/OOP5.dir/Provided/part2/lev_test.cpp.s
-.PHONY : Provided/part2/lev_test.cpp.s
+Provided/part1/Part1Examples.cpp.s:
+	$(MAKE) -f CMakeFiles\OOP5.dir\build.make CMakeFiles/OOP5.dir/Provided/part1/Part1Examples.cpp.s
+.PHONY : Provided/part1/Part1Examples.cpp.s
 
 # Help Target
 help:
@@ -158,9 +158,9 @@ help:
 	@echo ... OOP5
 	@echo ... edit_cache
 	@echo ... rebuild_cache
-	@echo ... Provided/part2/lev_test.obj
-	@echo ... Provided/part2/lev_test.i
-	@echo ... Provided/part2/lev_test.s
+	@echo ... Provided/part1/Part1Examples.obj
+	@echo ... Provided/part1/Part1Examples.i
+	@echo ... Provided/part1/Part1Examples.s
 .PHONY : help
 
 

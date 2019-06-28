@@ -82,34 +82,16 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="C:/Users/Liad/CLionProjects/OOP5/Provided/part2/BoardCell.h">
+		<Unit filename="C:/Users/Liad/CLionProjects/OOP5/Provided/part1/OOP5EventException.h">
 			<Option target="OOP5"/>
 		</Unit>
-		<Unit filename="C:/Users/Liad/CLionProjects/OOP5/Provided/part2/CellType.h">
+		<Unit filename="C:/Users/Liad/CLionProjects/OOP5/Provided/part1/Observer.h">
 			<Option target="OOP5"/>
 		</Unit>
-		<Unit filename="C:/Users/Liad/CLionProjects/OOP5/Provided/part2/Direction.h">
+		<Unit filename="C:/Users/Liad/CLionProjects/OOP5/Provided/part1/Part1Examples.cpp">
 			<Option target="OOP5"/>
 		</Unit>
-		<Unit filename="C:/Users/Liad/CLionProjects/OOP5/Provided/part2/GameBoard.h">
-			<Option target="OOP5"/>
-		</Unit>
-		<Unit filename="C:/Users/Liad/CLionProjects/OOP5/Provided/part2/List.h">
-			<Option target="OOP5"/>
-		</Unit>
-		<Unit filename="C:/Users/Liad/CLionProjects/OOP5/Provided/part2/MoveVehicle.h">
-			<Option target="OOP5"/>
-		</Unit>
-		<Unit filename="C:/Users/Liad/CLionProjects/OOP5/Provided/part2/RushHour.h">
-			<Option target="OOP5"/>
-		</Unit>
-		<Unit filename="C:/Users/Liad/CLionProjects/OOP5/Provided/part2/TransposeList.h">
-			<Option target="OOP5"/>
-		</Unit>
-		<Unit filename="C:/Users/Liad/CLionProjects/OOP5/Provided/part2/Utilities.h">
-			<Option target="OOP5"/>
-		</Unit>
-		<Unit filename="C:/Users/Liad/CLionProjects/OOP5/Provided/part2/lev_test.cpp">
+		<Unit filename="C:/Users/Liad/CLionProjects/OOP5/Provided/part1/Subject.h">
 			<Option target="OOP5"/>
 		</Unit>
 		<Unit filename="C:/Users/Liad/CLionProjects/OOP5/CMakeLists.txt">

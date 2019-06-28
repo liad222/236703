@@ -6,53 +6,25 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/Liad/CLionProjects/OOP5/Provided/part2/BoardCell.h
-Direction.h
-C:/Users/Liad/CLionProjects/OOP5/Provided/part2/Direction.h
-CellType.h
-C:/Users/Liad/CLionProjects/OOP5/Provided/part2/CellType.h
+C:/Users/Liad/CLionProjects/OOP5/Provided/part1/OOP5EventException.h
+exception
+-
 
-C:/Users/Liad/CLionProjects/OOP5/Provided/part2/CellType.h
+C:/Users/Liad/CLionProjects/OOP5/Provided/part1/Observer.h
 
-C:/Users/Liad/CLionProjects/OOP5/Provided/part2/Direction.h
-
-C:/Users/Liad/CLionProjects/OOP5/Provided/part2/GameBoard.h
-BoardCell.h
-C:/Users/Liad/CLionProjects/OOP5/Provided/part2/BoardCell.h
-List.h
-C:/Users/Liad/CLionProjects/OOP5/Provided/part2/List.h
-
-C:/Users/Liad/CLionProjects/OOP5/Provided/part2/List.h
-Utilities.h
-C:/Users/Liad/CLionProjects/OOP5/Provided/part2/Utilities.h
-
-C:/Users/Liad/CLionProjects/OOP5/Provided/part2/MoveVehicle.h
-GameBoard.h
-C:/Users/Liad/CLionProjects/OOP5/Provided/part2/GameBoard.h
-TransposeList.h
-C:/Users/Liad/CLionProjects/OOP5/Provided/part2/TransposeList.h
-
-C:/Users/Liad/CLionProjects/OOP5/Provided/part2/Printer.h
-RushHour.h
-C:/Users/Liad/CLionProjects/OOP5/Provided/part2/RushHour.h
+C:/Users/Liad/CLionProjects/OOP5/Provided/part1/Part1Examples.cpp
 iostream
 -
+Observer.h
+C:/Users/Liad/CLionProjects/OOP5/Provided/part1/Observer.h
+Subject.h
+C:/Users/Liad/CLionProjects/OOP5/Provided/part1/Subject.h
 
-C:/Users/Liad/CLionProjects/OOP5/Provided/part2/RushHour.h
-MoveVehicle.h
-C:/Users/Liad/CLionProjects/OOP5/Provided/part2/MoveVehicle.h
-
-C:/Users/Liad/CLionProjects/OOP5/Provided/part2/TransposeList.h
-List.h
-C:/Users/Liad/CLionProjects/OOP5/Provided/part2/List.h
-
-C:/Users/Liad/CLionProjects/OOP5/Provided/part2/Utilities.h
-
-C:/Users/Liad/CLionProjects/OOP5/Provided/part2/lev_test.cpp
-iostream
+C:/Users/Liad/CLionProjects/OOP5/Provided/part1/Subject.h
+OOP5EventException.h
+C:/Users/Liad/CLionProjects/OOP5/Provided/part1/OOP5EventException.h
+vector
 -
-typeinfo
--
-Printer.h
-C:/Users/Liad/CLionProjects/OOP5/Provided/part2/Printer.h
+Observer.h
+C:/Users/Liad/CLionProjects/OOP5/Provided/part1/Observer.h
 
