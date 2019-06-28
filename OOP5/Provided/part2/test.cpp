@@ -14,20 +14,20 @@ int main(){
     typedef List<Int<1>, Int<2>, Int<3>> list;
     typedef typename list::next listTail;
     std::cout << list::size << " first"<<std::endl;
-    Printer<list>::print(std::cout);
-    Printer<listTail>::print(std::cout);
-    Printer<List<list::head>>::print(std::cout);
+//    Printer<list>::print(std::cout);
+//    Printer<listTail>::print(std::cout);
+//    Printer<List<list::head>>::print(std::cout);
     typedef typename PrependList<Int<4>,list>::list newList;
     std::cout << newList::size << " second"<< std::endl;
-    Printer<newList>::print(std::cout);
+//    Printer<newList>::print(std::cout);
     GetAtIndex<0,list>::value a;
     GetAtIndex<2,list>::value b;
     typedef typename SetAtIndex<0, Int<5>, list>::list listA;
     std::cout << listA::size << " third"<< std::endl;
-    Printer<listA>::print(std::cout);
+//    Printer<listA>::print(std::cout);
     typedef typename SetAtIndex<2, Int<7>, list>::list listB;
     std::cout << listB::size << " fourth"<< std::endl;
-    Printer<listB>::print(std::cout);
+//    Printer<listB>::print(std::cout);
 
     int val = ConditionalInteger<(0 != 1), 0, 1>::value;
     std::cout << " fifth"<< std::endl << val << std::endl;
@@ -53,8 +53,8 @@ int main(){
             List < BoardCell<EMPTY, RIGHT,0> , BoardCell<EMPTY, DOWN , 2>, BoardCell<F, UP ,   2>, BoardCell<E,   UP  , 2>, BoardCell< K, RIGHT , 2>,  BoardCell< K , RIGHT ,    2>>,
             List < BoardCell<H, RIGHT, 2>    , BoardCell<H, RIGHT, 2>    , BoardCell<F, UP    ,2>, BoardCell<I, RIGHT , 2>, BoardCell< I, RIGHT , 2>,  BoardCell< EMPTY, RIGHT , 2>>
     > > gameBoard;
-    int Orow = FindVehicle<gameBoard, I, gameBoard::length-1>::row;
-    int Ocol = FindVehicle<gameBoard, I, gameBoard::length-1>::col;
+    int Orow = FindVehicle<gameBoard, A, gameBoard::length-1>::row;
+    int Ocol = FindVehicle<gameBoard, A, gameBoard::length-1>::col;
 
     std::cout << Orow << std::endl << Ocol << std::endl;
 
