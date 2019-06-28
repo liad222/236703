@@ -5,6 +5,7 @@
 #ifndef OOP5_OBSERVER_H
 #define OOP5_OBSERVER_H
 
+//The struct represents an Observer, which can handle events once triggered by the Subject.
 template<typename T>
 class Observer{
 public:

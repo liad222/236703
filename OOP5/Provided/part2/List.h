@@ -7,7 +7,7 @@
 
 #include "Utilities.h"
 
-
+//The struct represents a list of types
 template<typename... TT>
 struct List{};
 
@@ -23,6 +23,7 @@ struct List<>{
     constexpr static int size = 0;
 };
 
+//The struct describes a list after appending a given type at the begining of a given list
 template<typename T, typename U>
 struct PrependList{};
 
@@ -36,7 +37,7 @@ struct PrependList<T,List<>>{
     typedef List<T> list;
 };
 
-
+//The struct describes the element in index N in a given list
 template<int N, typename T>
 struct GetAtIndex{};
 
@@ -50,8 +51,7 @@ struct GetAtIndex<0,List<T, TT...>>{
     typedef T value;
 };
 
-
-
+//The struct sets index N of a given list to contain a given element
 template<int N, typename U, typename T>
 struct SetAtIndex{};
 

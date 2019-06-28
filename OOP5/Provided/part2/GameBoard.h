@@ -8,6 +8,7 @@
 #include "BoardCell.h"
 #include "List.h"
 
+//The struct represents the gameboard, which is a list of lists of BoardCells
 template<typename... TT>
 struct GameBoard{};
 

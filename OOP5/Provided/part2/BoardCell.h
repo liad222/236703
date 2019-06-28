@@ -8,6 +8,8 @@
 #include "Direction.h"
 #include "CellType.h"
 
+//The struct represents a cell in the gameboard - either empty or with car Type, placed in
+//direction Dir, with a certain length
 template<CellType Type, Direction Dir, int Length>
 struct BoardCell{
     constexpr static CellType type = Type;

@@ -9,9 +9,11 @@
 #include "TransposeList.h"
 
 //The struct receives a list of BoardCells, CellType LType and an index in the list,
-//and saves in the field "value" the first index in the list that has a BoardCell with the type LType-
-//if a previous index had the required Type of vehicle then "value" will be the previous "value",
-//otherwise, if the current index has the required Type of vehicle, "value" will be the current index.
+//and saves in the field "index" the first index in the list that has a BoardCell with the type LType.
+//If a previous index had the required Type of vehicle then "index" will be the previous "index",
+//otherwise, if the current index has the required Type of vehicle, "index" will be the current index.
+//In other words - "index" is the leftmost position of an LType CellType in the list.
+//If an LType CellType doesn't exist in the list, "index" is set to -1.
 template<typename T, CellType Type,int N>
 struct FindInList{};
 
@@ -26,8 +28,8 @@ struct FindInList<List<BoardCell<Type, Dir, Length>, TT...>, LType, N> {
     constexpr static int index = ConditionalInteger<(previous != -1), previous, current>::value;
 };
 
-//The struct receives a list of BoardCells of size 1, CellType LType and 0,
-//and saves in the field "value" 0 if the first index of the list has the required Type of vehicle, -1 otherwise.
+//The struct receives a list of BoardCells of size 1, CellType LType and the index 0,
+//and saves in the field "index" 0 if the first index of the list has the required Type of vehicle, -1 otherwise.
 template<typename... TT, CellType LType, CellType Type, Direction Dir, int Length>
 struct FindInList<List<BoardCell<Type, Dir, Length>, TT...>, LType, 0> {
     static_assert(LType != EMPTY, "Can't find EMPTY!!");
@@ -36,8 +38,7 @@ struct FindInList<List<BoardCell<Type, Dir, Length>, TT...>, LType, 0> {
 };
 
 
-
-
+//The struct represents a move in the game - moving car Type #Amount cells in direction Dir.
 template<CellType Type, Direction Dir, int Amount>
 struct Move{
     static_assert(Type != EMPTY, "Move's Type can't be EMPTY!!");
@@ -46,10 +47,12 @@ struct Move{
     constexpr static int amount = Amount;
 };
 
+
 //the struct receives gameboard, CellType Ltype and the number of lines in the board (minus 1 because the first line is line 0),
-// and saves in the fields row, col the "highest" row and the "leftmost" column that has the required Type of vehicle-
-//if a previous row, col had the required Type of vehicle then row, col will be the previous row, col,
-//otherwise, if the current row, col has the required Type of vehicle, row, col will be the current row, col.
+//and saves in the fields "row" and "col" the "highest" row and the "leftmost" column that has the required Type of vehicle.
+//If a previous row/col had the required Type of vehicle then row and col will be the previous row and col found.
+//Otherwise, if the current row and col have the required Type of vehicle, row and col will be the current row and col.
+//If the Vehicle of type Ltype is not found in the board, row and col are set to -1.
 template<typename U, CellType Type, int N>
 struct FindVehicle{};
 
@@ -68,10 +71,9 @@ struct FindVehicle<GameBoard<List<List<BoardCell<Type, Dir, Length>,UU...>, TT..
     constexpr static int col = ConditionalInteger<(previous_col != -1), previous_col, current_col>::value;
 };
 
-
 //The struct receives a gameboard, CellType Ltype and 0,
-//and saves in the fields row, col 0, the "leftmost" column that
-// has the required Type of vehicle if the first row of the gameboard has the required Type of vehicle, -1 otherwise.
+//and saves in the fields "row" and "col" the "leftmost" column that
+//has the required Type of vehicle if the first row of the gameboard has the required Type of vehicle, -1 otherwise.
 template<typename... UU, typename... TT, CellType LType,CellType Type, Direction Dir, int Length>
 struct FindVehicle<GameBoard<List<List<BoardCell<Type, Dir, Length>,UU...>, TT...>>, LType, 0>{
     static_assert(LType != EMPTY, "Can't find EMPTY!!");
@@ -82,10 +84,9 @@ struct FindVehicle<GameBoard<List<List<BoardCell<Type, Dir, Length>,UU...>, TT..
 };
 
 
-//the struct receives gameboard, row, col and returns the BoardCell in line number row and index number col of the gameboard.
+//The struct receives a gameboard, row and col indexes and returns the BoardCell in line number row and index number col of the gameboard.
 template<typename T, int row, int col>
 struct GetCell{};
-
 
 template<typename... UU, typename... TT,CellType Type, Direction Dir, int Length, int row, int col>
 struct GetCell<GameBoard<List<List<BoardCell<Type, Dir, Length>,UU...>, TT...>>, row, col>{
@@ -94,8 +95,9 @@ struct GetCell<GameBoard<List<List<BoardCell<Type, Dir, Length>,UU...>, TT...>>,
 };
 
 
-//the struct receives a gameboard, R, C and Direction(Right or Left)
-// and moves the car in line number R and index number C of the gameboard, one index to the required Direction.
+//The struct receives a gameboard, indexes R and C and Direction (Right or Left)
+//and moves the car in line number R and index number C of the gameboard, one cell to the required Direction.
+//Type new_board describes the gameboard after the move is made.
 template<typename T, int R, int C, Direction D>
 struct MoveByOne{};
 
@@ -137,10 +139,9 @@ struct MoveByOne<GameBoard<List<List<BoardCell<Type, Dir, Length>,UU...>, TT...>
 };
 
 
-
-
-//the struct receives a gameboard, R, C, NDir, CLen
-// and changes the direction of the car in line number R, index number C to be NDir. CLen is the length of the car.
+//The struct receives a gameboard, indexes R and C, direction NDir and int CLen
+//and changes the direction of the car in line number R, index number C to be NDir.
+//CLen is the number of cells left to be changed.
 template<typename T, int R, int C, Direction NDir, int CLen>
 struct ChangeCells{};
 
@@ -166,15 +167,14 @@ struct ChangeCells<GameBoard<List<List<BoardCell<Type, Dir, Length>,UU...>, TT..
 };
 
 
-
-//the struct that moves a car the required number of cells and in the required direction according to a move.
-//if the required direction is right or left, the struct creates a new line with the car in her new position(if possible) with the help of MoveByOne.
-//if the required direction is up or down, the struct does transpose to the gameboard,
+//The struct that moves a car the required number of cells and in the required direction according to a move.
+//If the required direction is right or left, the struct creates a new line with the car in her new position (if possible) with the help of struct MoveByOne.
+//If the required direction is up or down, the struct does transpose to the gameboard,
 //changes the direction of the cells of the car accordingly, moves the car right or left respectivly,
-//changes the direction of the cells to the original direction and transpose back the gameboard.
+//changes the direction of the cells to the original direction and transposes back the gameboard.
+//Type board describes the gameboard after the move is made.
 template<typename T, int R, int C, Direction D, int A>
 struct MoveVehicle{};
-
 
 template<typename... UU, typename... TT,CellType Type, Direction Dir, int Length, int R, int C, int A>
 struct MoveVehicle<GameBoard<List<List<BoardCell<Type, Dir, Length>,UU...>, TT...>>, R, C, RIGHT, A>{
@@ -185,8 +185,10 @@ struct MoveVehicle<GameBoard<List<List<BoardCell<Type, Dir, Length>,UU...>, TT..
     typedef typename GetCell<b, R, C>::Cell cell;
     static_assert(cell::type != EMPTY, "Can't move EMPTY vehicle");
     static_assert(cell::direction == RIGHT || cell::direction == LEFT, "Expected to move RIGHT");
+    //Finding the uppermost leftmost cell of the vehicle to be moved
     constexpr static int true_row = FindVehicle<b, cell::type, b::length - 1>::row;
     constexpr static int true_col = FindVehicle<b, cell::type, b::length - 1 >::col;
+    static_assert((true_row != -1 && true_col != -1), "Vehicle not on board!");
     typedef typename MoveVehicle<typename MoveByOne<b, true_row, true_col, RIGHT>::new_board, true_row, true_col +1 , RIGHT, A-1>::board board;
 };
 
@@ -199,8 +201,10 @@ struct MoveVehicle<GameBoard<List<List<BoardCell<Type, Dir, Length>,UU...>, TT..
     typedef typename GetCell<b, R, C>::Cell cell;
     static_assert(cell::type != EMPTY, "Can't move EMPTY vehicle");
     static_assert(cell::direction == RIGHT || cell::direction == LEFT, "Expected to move LEFT");
+    //Finding the uppermost leftmost cell of the vehicle to be moved
     constexpr static int true_row = FindVehicle<b, cell::type, b::length - 1>::row;
     constexpr static int true_col = FindVehicle<b, cell::type, b::length - 1>::col;
+    static_assert((true_row != -1 && true_col != -1), "Vehicle not on board!");
     typedef typename MoveVehicle<typename MoveByOne<b, true_row, true_col, LEFT>::new_board, true_row, true_col - 1, LEFT, A-1>::board board;
 };
 
@@ -214,7 +218,6 @@ struct MoveVehicle<GameBoard<List<List<BoardCell<Type, Dir, Length>,UU...>, TT..
     typedef GameBoard<List<List<BoardCell<Type, Dir, Length>,UU...>, TT...>> board;
 };
 
-
 template<typename... UU, typename... TT,CellType Type, Direction Dir, int Length, int R, int C, int A>
 struct MoveVehicle<GameBoard<List<List<BoardCell<Type, Dir, Length>,UU...>, TT...>>, R, C, DOWN, A>{
     typedef GameBoard<List<List<BoardCell<Type, Dir, Length>,UU...>, TT...>> b;
@@ -224,8 +227,10 @@ struct MoveVehicle<GameBoard<List<List<BoardCell<Type, Dir, Length>,UU...>, TT..
     typedef typename GetCell<b, R, C>::Cell cell;
     static_assert(cell::type != EMPTY, "Can't move EMPTY vehicle");
     static_assert(cell::direction == UP || cell::direction == DOWN, "Expected to move DOWN");
+    //Finding the uppermost leftmost cell of the vehicle to be moved
     constexpr static int true_row = FindVehicle<b, cell::type, b::length - 1>::row;
     constexpr static int true_col = FindVehicle<b, cell::type, b::length - 1>::col;
+    static_assert((true_row != -1 && true_col != -1), "Vehicle not on board!");
     typedef typename Transpose<typename b::board>::matrix transposed_lists;
     typedef GameBoard<transposed_lists> transposed_board;
     constexpr static Direction Orignal_dir = cell::direction;
@@ -245,8 +250,10 @@ struct MoveVehicle<GameBoard<List<List<BoardCell<Type, Dir, Length>,UU...>, TT..
     typedef typename GetCell<b, R, C>::Cell cell;
     static_assert(cell::type != EMPTY, "Can't move EMPTY vehicle");
     static_assert(cell::direction == UP || cell::direction == DOWN, "Expected to move UP");
+    //Finding the uppermost leftmost cell of the vehicle to be moved
     constexpr static int true_row = FindVehicle<b, cell::type, b::length - 1>::row;
     constexpr static int true_col = FindVehicle<b, cell::type, b::length - 1>::col;
+    static_assert((true_row != -1 && true_col != -1), "Vehicle not on board!");
     typedef typename Transpose<typename b::board>::matrix transposed_lists;
     typedef GameBoard<transposed_lists> transposed_board;
     constexpr static Direction Orignal_dir = cell::direction;
